@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B81E3B6C169A727E86C6908C943296 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A476B6FA8DB53D6D21D04E2A3596660 /* String+Extension.swift */; };
+		0B072CC80EC24EA6BCC4A3008BCB5202 /* Pods-StandwoodTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1207673F3CCCB90433432F123E594C /* Pods-StandwoodTask-dummy.m */; };
+		214A8B0206D994A97A735C55B5C3759C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F45EDB5101782C1AD29522AF7D1775 /* UIViewController+Extension.swift */; };
+		21E6D6A4551617F894F677E145950B91 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DAA316AB6AB219BF43DEE9AA504A9 /* UICollectionViewCell+Extension.swift */; };
+		22118B77D8D19A699110A952B3577339 /* NotificationCenter+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E657A37CF1CADC2B177D4FBBA6301B /* NotificationCenter+Observer.swift */; };
+		26F67EEE831C5A9D57E81D607C32A890 /* Autosizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61F720E02385471CDA80950D5CF50E0 /* Autosizable.swift */; };
+		368CA31120C24F046753B65ED64825FA /* StanwoodCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715CB26BD6925E2E11874C8332CC744D /* StanwoodCore-dummy.m */; };
+		3EDCD96991CF33A9B93B8B698EFF988F /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29D90842827DB00F66B84CFB6FDB9CA /* CGFloat+Extension.swift */; };
+		46DEBA0265527DE6C4FF2EFD61219178 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD1DC2A6CDF0251B908DB4262083CAC /* UIColor+Extension.swift */; };
+		47B694DF3CDFC313EA02AF59B3417DD8 /* StanwoodCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05F8EA5B0E91DE023CFD87FCD0BA79 /* StanwoodCore-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		483D1ECA1DA519D2555AEB040247308B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F50869BB8AEE66A829C6F5BC2B7DD7 /* UILabel+Extension.swift */; };
+		578206D7C62210821745205A34567F63 /* CodingBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F03A51CC00847CE63AD9015E787CF /* CodingBridge.swift */; };
+		58A7138B4D288E385D5F4932FEAAA07C /* Fading+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA83D1D97B8A0617E7BE01D30D2472F /* Fading+UIView.swift */; };
+		5A877F1F74734E840313CDDF7C0F48AA /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D110CBD5386099D8D4F80E98A2E88 /* BasePresenter.swift */; };
+		5D81DF7C32088FDCCF929AA376FDB75C /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4482BAA1A4B2851281BA899D7F49D6 /* UITextField+Extension.swift */; };
+		6032BA59284982A7EF86834CB30859BF /* Stanwood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12124803981CE0DE9806EF580817398 /* Stanwood.swift */; };
+		6C42214D9AEEA38031280BA6C5883342 /* HasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E485C5E3E2EDB5914D863B272B9B24F6 /* HasPresenter.swift */; };
+		6CD0DEBDA26D316E1526C8C421D4A97D /* UITestingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D745876BE6420E706CC583F17C164F9F /* UITestingCore.swift */; };
+		71A0722555C58D079ED00266827851A8 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B722D1DB46663049A7AFC510BE314918 /* UIDevice+Extension.swift */; };
+		7E154CC6A15588C4AB5D8CEBAADABF39 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E067CDE6E7FE2BB20B7BEA86EA13AE6F /* UIBarButtonItem+Extension.swift */; };
+		96C2B879D2962B4BD8246F360E269BC0 /* AppSettingsExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1589727CEEF5D7745E1D8104E539F82D /* AppSettingsExplorer.swift */; };
+		9C07E215919A131D31939951389A27E7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9E44F99635B6FF537CE2DCDB4FDE9 /* Storage.swift */; };
+		9CE3878B18BB7098E3869A9D4B61ECF0 /* MetaModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63596626E79EF588ABFAD29865CB9CCE /* MetaModule.swift */; };
+		AA55461482822F964E2AC3CF37D0C161 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67882B6320E528BE31E5FE8430E74720 /* DispatchQueue+Extension.swift */; };
+		B19EDD03D5CC0847F5719F009F9407E7 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B046AA6018090FD74CD2803CBAACF6 /* Presentable.swift */; };
+		BFD78BEEF7AAA94822F33441445D06B6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A88BCEE35320994D509081667CBD4 /* UIButton+Extension.swift */; };
+		C082704C69D87942CC9D00D55396D62D /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBCA6DF722521CE52FB3D553040B8 /* FeedbackGenerator.swift */; };
+		C150A20FF06310B27CA56CDA0A2B10CD /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B24CC96FB1AC7134EAE39BF8B8ABD7 /* Wireframe.swift */; };
+		C6DA3A0FFB513DD10443407E5E2AB7B6 /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC0291AA692840F58ABF31535F4950 /* TimeInterval+Extension.swift */; };
+		CB9139F48B330908152EEC658A05952D /* Pods-StandwoodTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 282898C65F70C540F80AB1080C1C0C17 /* Pods-StandwoodTask-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4428FEFE64800129DB862F88CF976AC /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C18198923D2A214EB46DB2CD84F4E0 /* UIStoryboard+Extension.swift */; };
+		E8B00CDEA52B0EDBF37B99FF24D931C1 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503719AA527F4EB8974181CA3210AA1 /* UIApplication+Extension.swift */; };
+		E91247FAE364F05D3A8F22F0346B9B3D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719ED7D4EE358514BE35B60D5E508D6C /* UIView+Extension.swift */; };
+		E93C2A5D5E2777077C300A3252953CD3 /* Disposable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ACFF6E98B06F802206020E8A853C52 /* Disposable+UIView.swift */; };
+		ED2371F8002E301F5226277A5B3CBF06 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2533FCB6EFE0F78B1BAA6BBAD10C7 /* Loadable.swift */; };
+		F6699DF6924B9A23C7BDAD67468CF160 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCFF887CA938E4D36D908A23B4D5A3A /* UISearchBar+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C54093A727CE5870957E739543CCE55C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E864E7C2E6137975B52C9FDEDE866E7;
+			remoteInfo = StanwoodCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DD1DC2A6CDF0251B908DB4262083CAC /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "StanwoodCore/Extensions/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0E354435C9A0A613855B25C28822A11D /* StanwoodCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StanwoodCore.release.xcconfig; sourceTree = "<group>"; };
+		0E593A6181C9695AF97BF22BF04A689D /* Pods-StandwoodTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StandwoodTask.modulemap"; sourceTree = "<group>"; };
+		1589727CEEF5D7745E1D8104E539F82D /* AppSettingsExplorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppSettingsExplorer.swift; path = StanwoodCore/Core/AppSettingsExplorer.swift; sourceTree = "<group>"; };
+		15ACFF6E98B06F802206020E8A853C52 /* Disposable+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disposable+UIView.swift"; path = "StanwoodCore/Protocols/Disposable+UIView.swift"; sourceTree = "<group>"; };
+		17AC0291AA692840F58ABF31535F4950 /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extension.swift"; path = "StanwoodCore/Extensions/TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		282898C65F70C540F80AB1080C1C0C17 /* Pods-StandwoodTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StandwoodTask-umbrella.h"; sourceTree = "<group>"; };
+		2D6D110CBD5386099D8D4F80E98A2E88 /* BasePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasePresenter.swift; path = StanwoodCore/Core/BasePresenter.swift; sourceTree = "<group>"; };
+		35B24CC96FB1AC7134EAE39BF8B8ABD7 /* Wireframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wireframe.swift; path = StanwoodCore/Protocols/Wireframe.swift; sourceTree = "<group>"; };
+		391A88BCEE35320994D509081667CBD4 /* UIButton+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "StanwoodCore/Extensions/UIButton+Extension.swift"; sourceTree = "<group>"; };
+		3CCFF887CA938E4D36D908A23B4D5A3A /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Extension.swift"; path = "StanwoodCore/Extensions/UISearchBar+Extension.swift"; sourceTree = "<group>"; };
+		449AFAC7C005437BAC9D6155DF424412 /* Pods-StandwoodTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StandwoodTask-acknowledgements.plist"; sourceTree = "<group>"; };
+		4FA83D1D97B8A0617E7BE01D30D2472F /* Fading+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Fading+UIView.swift"; path = "StanwoodCore/Extensions/Fading+UIView.swift"; sourceTree = "<group>"; };
+		5A476B6FA8DB53D6D21D04E2A3596660 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "StanwoodCore/Extensions/String+Extension.swift"; sourceTree = "<group>"; };
+		6315D5F7538F0F042ACD8C5CBD539038 /* libPods-StandwoodTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-StandwoodTask.a"; path = "libPods-StandwoodTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63596626E79EF588ABFAD29865CB9CCE /* MetaModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetaModule.swift; path = StanwoodCore/Protocols/MetaModule.swift; sourceTree = "<group>"; };
+		67882B6320E528BE31E5FE8430E74720 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extension.swift"; path = "StanwoodCore/Extensions/DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		67F50869BB8AEE66A829C6F5BC2B7DD7 /* UILabel+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Extension.swift"; path = "StanwoodCore/Extensions/UILabel+Extension.swift"; sourceTree = "<group>"; };
+		6F0DAA316AB6AB219BF43DEE9AA504A9 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionViewCell+Extension.swift"; path = "StanwoodCore/Extensions/UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		715CB26BD6925E2E11874C8332CC744D /* StanwoodCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StanwoodCore-dummy.m"; sourceTree = "<group>"; };
+		719ED7D4EE358514BE35B60D5E508D6C /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "StanwoodCore/Extensions/UIView+Extension.swift"; sourceTree = "<group>"; };
+		71F45EDB5101782C1AD29522AF7D1775 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "StanwoodCore/Extensions/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		76E2533FCB6EFE0F78B1BAA6BBAD10C7 /* Loadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loadable.swift; path = StanwoodCore/Protocols/Loadable.swift; sourceTree = "<group>"; };
+		80F9E44F99635B6FF537CE2DCDB4FDE9 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = StanwoodCore/Core/Storage.swift; sourceTree = "<group>"; };
+		83ECBCA6DF722521CE52FB3D553040B8 /* FeedbackGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedbackGenerator.swift; path = StanwoodCore/Core/FeedbackGenerator.swift; sourceTree = "<group>"; };
+		94A43B67E36ADCD7F2BAD7FFBCCE6E9B /* StanwoodCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StanwoodCore.debug.xcconfig; sourceTree = "<group>"; };
+		9B1207673F3CCCB90433432F123E594C /* Pods-StandwoodTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StandwoodTask-dummy.m"; sourceTree = "<group>"; };
+		9D4482BAA1A4B2851281BA899D7F49D6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Extension.swift"; path = "StanwoodCore/Extensions/UITextField+Extension.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD0563F11F982C914379DB82E73F4F1 /* Pods-StandwoodTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTask.debug.xcconfig"; sourceTree = "<group>"; };
+		A12124803981CE0DE9806EF580817398 /* Stanwood.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stanwood.swift; path = StanwoodCore/Core/Stanwood.swift; sourceTree = "<group>"; };
+		A29D90842827DB00F66B84CFB6FDB9CA /* CGFloat+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extension.swift"; path = "StanwoodCore/Extensions/CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		A6E8BE293A2D0F1BB0D8052A3F4A4963 /* StanwoodCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StanwoodCore.modulemap; sourceTree = "<group>"; };
+		B722D1DB46663049A7AFC510BE314918 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "StanwoodCore/Extensions/UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		B8C9E00EC1218D1B4C235E42ACD47235 /* StanwoodCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StanwoodCore-prefix.pch"; sourceTree = "<group>"; };
+		C3C18198923D2A214EB46DB2CD84F4E0 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+Extension.swift"; path = "StanwoodCore/Extensions/UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		CE3F03A51CC00847CE63AD9015E787CF /* CodingBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodingBridge.swift; path = StanwoodCore/Core/CodingBridge.swift; sourceTree = "<group>"; };
+		D1F2AF0FD5F8B40427D14C8F49AA132B /* libStanwoodCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libStanwoodCore.a; path = libStanwoodCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B046AA6018090FD74CD2803CBAACF6 /* Presentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentable.swift; path = StanwoodCore/Protocols/Presentable.swift; sourceTree = "<group>"; };
+		D61F720E02385471CDA80950D5CF50E0 /* Autosizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Autosizable.swift; path = StanwoodCore/Protocols/Autosizable.swift; sourceTree = "<group>"; };
+		D745876BE6420E706CC583F17C164F9F /* UITestingCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITestingCore.swift; path = StanwoodCore/Core/UITestingCore.swift; sourceTree = "<group>"; };
+		E067CDE6E7FE2BB20B7BEA86EA13AE6F /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Extension.swift"; path = "StanwoodCore/Extensions/UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		E0E657A37CF1CADC2B177D4FBBA6301B /* NotificationCenter+Observer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+Observer.swift"; path = "StanwoodCore/Core/NotificationCenter+Observer.swift"; sourceTree = "<group>"; };
+		E485C5E3E2EDB5914D863B272B9B24F6 /* HasPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasPresenter.swift; path = StanwoodCore/Protocols/HasPresenter.swift; sourceTree = "<group>"; };
+		E503719AA527F4EB8974181CA3210AA1 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Extension.swift"; path = "StanwoodCore/Extensions/UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		ED4485D01503DD2E1541E0CADECE4ACC /* Pods-StandwoodTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTask.release.xcconfig"; sourceTree = "<group>"; };
+		F9844D496C54E9469ED3759C2E5C70BC /* Pods-StandwoodTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StandwoodTask-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FA05F8EA5B0E91DE023CFD87FCD0BA79 /* StanwoodCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StanwoodCore-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1851A80948C668B5D40EDEBB758B437F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6C26103FD3B1AEE90E9463E0B7FA807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0196852B5C2894226B8BAB57995009CD /* Pods-StandwoodTask */ = {
+			isa = PBXGroup;
+			children = (
+				0E593A6181C9695AF97BF22BF04A689D /* Pods-StandwoodTask.modulemap */,
+				F9844D496C54E9469ED3759C2E5C70BC /* Pods-StandwoodTask-acknowledgements.markdown */,
+				449AFAC7C005437BAC9D6155DF424412 /* Pods-StandwoodTask-acknowledgements.plist */,
+				9B1207673F3CCCB90433432F123E594C /* Pods-StandwoodTask-dummy.m */,
+				282898C65F70C540F80AB1080C1C0C17 /* Pods-StandwoodTask-umbrella.h */,
+				9DD0563F11F982C914379DB82E73F4F1 /* Pods-StandwoodTask.debug.xcconfig */,
+				ED4485D01503DD2E1541E0CADECE4ACC /* Pods-StandwoodTask.release.xcconfig */,
+			);
+			name = "Pods-StandwoodTask";
+			path = "Target Support Files/Pods-StandwoodTask";
+			sourceTree = "<group>";
+		};
+		0A3E0F25789C018379EAE341EC90ABA7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0196852B5C2894226B8BAB57995009CD /* Pods-StandwoodTask */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1C726EF9EC307FE21D69C5518ACB0AE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6315D5F7538F0F042ACD8C5CBD539038 /* libPods-StandwoodTask.a */,
+				D1F2AF0FD5F8B40427D14C8F49AA132B /* libStanwoodCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88D518B1A554D279B8C3ACD90B684EF7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE293A2D0F1BB0D8052A3F4A4963 /* StanwoodCore.modulemap */,
+				715CB26BD6925E2E11874C8332CC744D /* StanwoodCore-dummy.m */,
+				B8C9E00EC1218D1B4C235E42ACD47235 /* StanwoodCore-prefix.pch */,
+				FA05F8EA5B0E91DE023CFD87FCD0BA79 /* StanwoodCore-umbrella.h */,
+				94A43B67E36ADCD7F2BAD7FFBCCE6E9B /* StanwoodCore.debug.xcconfig */,
+				0E354435C9A0A613855B25C28822A11D /* StanwoodCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StanwoodCore";
+			sourceTree = "<group>";
+		};
+		9FBA0BC57FF60A4DCD35DD9F43A9DEB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEB2FD1D9D80DFF1E4EF05C05ECBCAB7 /* StanwoodCore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				9FBA0BC57FF60A4DCD35DD9F43A9DEB0 /* Pods */,
+				1C726EF9EC307FE21D69C5518ACB0AE8 /* Products */,
+				0A3E0F25789C018379EAE341EC90ABA7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB2FD1D9D80DFF1E4EF05C05ECBCAB7 /* StanwoodCore */ = {
+			isa = PBXGroup;
+			children = (
+				1589727CEEF5D7745E1D8104E539F82D /* AppSettingsExplorer.swift */,
+				D61F720E02385471CDA80950D5CF50E0 /* Autosizable.swift */,
+				2D6D110CBD5386099D8D4F80E98A2E88 /* BasePresenter.swift */,
+				A29D90842827DB00F66B84CFB6FDB9CA /* CGFloat+Extension.swift */,
+				CE3F03A51CC00847CE63AD9015E787CF /* CodingBridge.swift */,
+				67882B6320E528BE31E5FE8430E74720 /* DispatchQueue+Extension.swift */,
+				15ACFF6E98B06F802206020E8A853C52 /* Disposable+UIView.swift */,
+				4FA83D1D97B8A0617E7BE01D30D2472F /* Fading+UIView.swift */,
+				83ECBCA6DF722521CE52FB3D553040B8 /* FeedbackGenerator.swift */,
+				E485C5E3E2EDB5914D863B272B9B24F6 /* HasPresenter.swift */,
+				76E2533FCB6EFE0F78B1BAA6BBAD10C7 /* Loadable.swift */,
+				63596626E79EF588ABFAD29865CB9CCE /* MetaModule.swift */,
+				E0E657A37CF1CADC2B177D4FBBA6301B /* NotificationCenter+Observer.swift */,
+				D2B046AA6018090FD74CD2803CBAACF6 /* Presentable.swift */,
+				A12124803981CE0DE9806EF580817398 /* Stanwood.swift */,
+				80F9E44F99635B6FF537CE2DCDB4FDE9 /* Storage.swift */,
+				5A476B6FA8DB53D6D21D04E2A3596660 /* String+Extension.swift */,
+				17AC0291AA692840F58ABF31535F4950 /* TimeInterval+Extension.swift */,
+				E503719AA527F4EB8974181CA3210AA1 /* UIApplication+Extension.swift */,
+				E067CDE6E7FE2BB20B7BEA86EA13AE6F /* UIBarButtonItem+Extension.swift */,
+				391A88BCEE35320994D509081667CBD4 /* UIButton+Extension.swift */,
+				6F0DAA316AB6AB219BF43DEE9AA504A9 /* UICollectionViewCell+Extension.swift */,
+				0DD1DC2A6CDF0251B908DB4262083CAC /* UIColor+Extension.swift */,
+				B722D1DB46663049A7AFC510BE314918 /* UIDevice+Extension.swift */,
+				67F50869BB8AEE66A829C6F5BC2B7DD7 /* UILabel+Extension.swift */,
+				3CCFF887CA938E4D36D908A23B4D5A3A /* UISearchBar+Extension.swift */,
+				C3C18198923D2A214EB46DB2CD84F4E0 /* UIStoryboard+Extension.swift */,
+				D745876BE6420E706CC583F17C164F9F /* UITestingCore.swift */,
+				9D4482BAA1A4B2851281BA899D7F49D6 /* UITextField+Extension.swift */,
+				719ED7D4EE358514BE35B60D5E508D6C /* UIView+Extension.swift */,
+				71F45EDB5101782C1AD29522AF7D1775 /* UIViewController+Extension.swift */,
+				35B24CC96FB1AC7134EAE39BF8B8ABD7 /* Wireframe.swift */,
+				88D518B1A554D279B8C3ACD90B684EF7 /* Support Files */,
+			);
+			name = StanwoodCore;
+			path = StanwoodCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		438679A9E4A49910E2231C4A2C0F69C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B694DF3CDFC313EA02AF59B3417DD8 /* StanwoodCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5382B2DBEE631E7697E953B01CA52771 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9139F48B330908152EEC658A05952D /* Pods-StandwoodTask-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E864E7C2E6137975B52C9FDEDE866E7 /* StanwoodCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BF82542CBBC51139A2D5FC4D87400CD /* Build configuration list for PBXNativeTarget "StanwoodCore" */;
+			buildPhases = (
+				438679A9E4A49910E2231C4A2C0F69C1 /* Headers */,
+				BAE40F0769254D26CBC60D6ACC17F2EE /* Sources */,
+				1851A80948C668B5D40EDEBB758B437F /* Frameworks */,
+				E3D80E7A42D771EF984DCE6D0EA07976 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StanwoodCore;
+			productName = StanwoodCore;
+			productReference = D1F2AF0FD5F8B40427D14C8F49AA132B /* libStanwoodCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A29CB651DEA7E7574A294E459937FF96 /* Pods-StandwoodTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D55F93B5C65199EDB28E46830346DD3 /* Build configuration list for PBXNativeTarget "Pods-StandwoodTask" */;
+			buildPhases = (
+				5382B2DBEE631E7697E953B01CA52771 /* Headers */,
+				BA56D4FE69C01E29969760A4B1CED751 /* Sources */,
+				C6C26103FD3B1AEE90E9463E0B7FA807 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				153726B03A5D82549F796B9A19E78FE0 /* PBXTargetDependency */,
+			);
+			name = "Pods-StandwoodTask";
+			productName = "Pods-StandwoodTask";
+			productReference = 6315D5F7538F0F042ACD8C5CBD539038 /* libPods-StandwoodTask.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1C726EF9EC307FE21D69C5518ACB0AE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A29CB651DEA7E7574A294E459937FF96 /* Pods-StandwoodTask */,
+				1E864E7C2E6137975B52C9FDEDE866E7 /* StanwoodCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3D80E7A42D771EF984DCE6D0EA07976 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/StanwoodCore/StanwoodCore.modulemap",
+				"${PODS_ROOT}/Headers/Public/StanwoodCore/StanwoodCore-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/StanwoodCore-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/StanwoodCore/StanwoodCore.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/StanwoodCore/StanwoodCore-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA56D4FE69C01E29969760A4B1CED751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B072CC80EC24EA6BCC4A3008BCB5202 /* Pods-StandwoodTask-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE40F0769254D26CBC60D6ACC17F2EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2B879D2962B4BD8246F360E269BC0 /* AppSettingsExplorer.swift in Sources */,
+				26F67EEE831C5A9D57E81D607C32A890 /* Autosizable.swift in Sources */,
+				5A877F1F74734E840313CDDF7C0F48AA /* BasePresenter.swift in Sources */,
+				3EDCD96991CF33A9B93B8B698EFF988F /* CGFloat+Extension.swift in Sources */,
+				578206D7C62210821745205A34567F63 /* CodingBridge.swift in Sources */,
+				AA55461482822F964E2AC3CF37D0C161 /* DispatchQueue+Extension.swift in Sources */,
+				E93C2A5D5E2777077C300A3252953CD3 /* Disposable+UIView.swift in Sources */,
+				58A7138B4D288E385D5F4932FEAAA07C /* Fading+UIView.swift in Sources */,
+				C082704C69D87942CC9D00D55396D62D /* FeedbackGenerator.swift in Sources */,
+				6C42214D9AEEA38031280BA6C5883342 /* HasPresenter.swift in Sources */,
+				ED2371F8002E301F5226277A5B3CBF06 /* Loadable.swift in Sources */,
+				9CE3878B18BB7098E3869A9D4B61ECF0 /* MetaModule.swift in Sources */,
+				22118B77D8D19A699110A952B3577339 /* NotificationCenter+Observer.swift in Sources */,
+				B19EDD03D5CC0847F5719F009F9407E7 /* Presentable.swift in Sources */,
+				6032BA59284982A7EF86834CB30859BF /* Stanwood.swift in Sources */,
+				368CA31120C24F046753B65ED64825FA /* StanwoodCore-dummy.m in Sources */,
+				9C07E215919A131D31939951389A27E7 /* Storage.swift in Sources */,
+				09B81E3B6C169A727E86C6908C943296 /* String+Extension.swift in Sources */,
+				C6DA3A0FFB513DD10443407E5E2AB7B6 /* TimeInterval+Extension.swift in Sources */,
+				E8B00CDEA52B0EDBF37B99FF24D931C1 /* UIApplication+Extension.swift in Sources */,
+				7E154CC6A15588C4AB5D8CEBAADABF39 /* UIBarButtonItem+Extension.swift in Sources */,
+				BFD78BEEF7AAA94822F33441445D06B6 /* UIButton+Extension.swift in Sources */,
+				21E6D6A4551617F894F677E145950B91 /* UICollectionViewCell+Extension.swift in Sources */,
+				46DEBA0265527DE6C4FF2EFD61219178 /* UIColor+Extension.swift in Sources */,
+				71A0722555C58D079ED00266827851A8 /* UIDevice+Extension.swift in Sources */,
+				483D1ECA1DA519D2555AEB040247308B /* UILabel+Extension.swift in Sources */,
+				F6699DF6924B9A23C7BDAD67468CF160 /* UISearchBar+Extension.swift in Sources */,
+				D4428FEFE64800129DB862F88CF976AC /* UIStoryboard+Extension.swift in Sources */,
+				6CD0DEBDA26D316E1526C8C421D4A97D /* UITestingCore.swift in Sources */,
+				5D81DF7C32088FDCCF929AA376FDB75C /* UITextField+Extension.swift in Sources */,
+				E91247FAE364F05D3A8F22F0346B9B3D /* UIView+Extension.swift in Sources */,
+				214A8B0206D994A97A735C55B5C3759C /* UIViewController+Extension.swift in Sources */,
+				C150A20FF06310B27CA56CDA0A2B10CD /* Wireframe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		153726B03A5D82549F796B9A19E78FE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StanwoodCore;
+			target = 1E864E7C2E6137975B52C9FDEDE866E7 /* StanwoodCore */;
+			targetProxy = C54093A727CE5870957E739543CCE55C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03113C4564C67A6416709AEEBD0780C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD0563F11F982C914379DB82E73F4F1 /* Pods-StandwoodTask.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StandwoodTask/Pods-StandwoodTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B6D9AD9E5314CDF73D979AFAF379950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A43B67E36ADCD7F2BAD7FFBCCE6E9B /* StanwoodCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/StanwoodCore/StanwoodCore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/StanwoodCore/StanwoodCore.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = StanwoodCore;
+				PRODUCT_NAME = StanwoodCore;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6601DF311587C61AC8899FAF6429D463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E354435C9A0A613855B25C28822A11D /* StanwoodCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/StanwoodCore/StanwoodCore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/StanwoodCore/StanwoodCore.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = StanwoodCore;
+				PRODUCT_NAME = StanwoodCore;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0782E6D1AE6CC5C2010CEC2D9EC2115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4485D01503DD2E1541E0CADECE4ACC /* Pods-StandwoodTask.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StandwoodTask/Pods-StandwoodTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D55F93B5C65199EDB28E46830346DD3 /* Build configuration list for PBXNativeTarget "Pods-StandwoodTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03113C4564C67A6416709AEEBD0780C8 /* Debug */,
+				B0782E6D1AE6CC5C2010CEC2D9EC2115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BF82542CBBC51139A2D5FC4D87400CD /* Build configuration list for PBXNativeTarget "StanwoodCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6D9AD9E5314CDF73D979AFAF379950 /* Debug */,
+				6601DF311587C61AC8899FAF6429D463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

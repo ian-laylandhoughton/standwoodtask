@@ -1,0 +1,6 @@
+module Pods_StandwoodTask {
+  umbrella header "Pods-StandwoodTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
