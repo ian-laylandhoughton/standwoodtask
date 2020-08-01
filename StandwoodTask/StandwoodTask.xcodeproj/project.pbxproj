@@ -12,6 +12,10 @@
 		C92A813024D5CB7A00E46E1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A812F24D5CB7900E46E1C /* Constants.swift */; };
 		C92A813224D5CBA500E46E1C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A813124D5CBA500E46E1C /* Date+Extension.swift */; };
 		C92A813424D5CE4600E46E1C /* STError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A813324D5CE4600E46E1C /* STError.swift */; };
+		C92A813724D5DFAC00E46E1C /* RepoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A813524D5DFAC00E46E1C /* RepoCollectionViewCell.swift */; };
+		C92A813824D5DFAC00E46E1C /* RepoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92A813624D5DFAC00E46E1C /* RepoCollectionViewCell.xib */; };
+		C92A813A24D5E3D300E46E1C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A813924D5E3D300E46E1C /* UIImageView+Extension.swift */; };
+		C92A813C24D5F5F300E46E1C /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A813B24D5F5F300E46E1C /* FavouritesManager.swift */; };
 		C97ACD7E24D5B2000079C7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD7D24D5B2000079C7C4 /* AppDelegate.swift */; };
 		C97ACD8024D5B2000079C7C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD7F24D5B2000079C7C4 /* SceneDelegate.swift */; };
 		C97ACD8224D5B2000079C7C4 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD8124D5B2000079C7C4 /* RepositoriesViewController.swift */; };
@@ -50,6 +54,10 @@
 		C92A812F24D5CB7900E46E1C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C92A813124D5CBA500E46E1C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		C92A813324D5CE4600E46E1C /* STError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STError.swift; sourceTree = "<group>"; };
+		C92A813524D5DFAC00E46E1C /* RepoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCollectionViewCell.swift; sourceTree = "<group>"; };
+		C92A813624D5DFAC00E46E1C /* RepoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCollectionViewCell.xib; sourceTree = "<group>"; };
+		C92A813924D5E3D300E46E1C /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		C92A813B24D5F5F300E46E1C /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
 		C97ACD7A24D5B2000079C7C4 /* StandwoodTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandwoodTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97ACD7D24D5B2000079C7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97ACD7F24D5B2000079C7C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +200,7 @@
 				C97ACD7F24D5B2000079C7C4 /* SceneDelegate.swift */,
 				C97ACDB724D5BCDE0079C7C4 /* Localizable.strings */,
 				C92A812F24D5CB7900E46E1C /* Constants.swift */,
+				C92A813B24D5F5F300E46E1C /* FavouritesManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 				C97ACDA824D5B6210079C7C4 /* UIFont+Extension.swift */,
 				C97ACDB024D5B9B70079C7C4 /* UIColor+Extension.swift */,
 				C92A813124D5CBA500E46E1C /* Date+Extension.swift */,
+				C92A813924D5E3D300E46E1C /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +262,8 @@
 		C97ACDBC24D5C4CE0079C7C4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C92A813524D5DFAC00E46E1C /* RepoCollectionViewCell.swift */,
+				C92A813624D5DFAC00E46E1C /* RepoCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -348,6 +360,7 @@
 			files = (
 				C97ACD8C24D5B2010079C7C4 /* LaunchScreen.storyboard in Resources */,
 				C97ACDB824D5BCDE0079C7C4 /* Localizable.strings in Resources */,
+				C92A813824D5DFAC00E46E1C /* RepoCollectionViewCell.xib in Resources */,
 				C97ACDAE24D5B8710079C7C4 /* AdobeGothicStd-Bold.otf in Resources */,
 				C97ACD8924D5B2010079C7C4 /* Assets.xcassets in Resources */,
 				C97ACD8724D5B2000079C7C4 /* Main.storyboard in Resources */,
@@ -398,16 +411,19 @@
 				C97ACDB424D5BADA0079C7C4 /* STNavigationController.swift in Sources */,
 				C97ACD8424D5B2000079C7C4 /* SecondViewController.swift in Sources */,
 				C97ACDBE24D5C52D0079C7C4 /* GithubRepo.swift in Sources */,
+				C92A813724D5DFAC00E46E1C /* RepoCollectionViewCell.swift in Sources */,
 				C97ACDBA24D5BD8D0079C7C4 /* RepositoriesViewModel.swift in Sources */,
 				C97ACD8224D5B2000079C7C4 /* RepositoriesViewController.swift in Sources */,
 				C97ACD7E24D5B2000079C7C4 /* AppDelegate.swift in Sources */,
 				C92A813024D5CB7A00E46E1C /* Constants.swift in Sources */,
+				C92A813C24D5F5F300E46E1C /* FavouritesManager.swift in Sources */,
 				C97ACDA924D5B6210079C7C4 /* UIFont+Extension.swift in Sources */,
 				C97ACDC224D5C61B0079C7C4 /* GithubOwner.swift in Sources */,
 				C97ACD8024D5B2000079C7C4 /* SceneDelegate.swift in Sources */,
 				C92A813224D5CBA500E46E1C /* Date+Extension.swift in Sources */,
 				C92A813424D5CE4600E46E1C /* STError.swift in Sources */,
 				C97ACDC024D5C53F0079C7C4 /* GithubList.swift in Sources */,
+				C92A813A24D5E3D300E46E1C /* UIImageView+Extension.swift in Sources */,
 				C97ACDB124D5B9B70079C7C4 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,15 @@ import UIKit
 
 class RepositoriesViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
+    private let cellIdentifier = "repoCell"
+    private let cellNibName = "RepoCollectionViewCell"
+    
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            let repoCellNib = UINib(nibName: self.cellNibName, bundle: nil)
+            self.collectionView.register(repoCellNib, forCellWithReuseIdentifier: self.cellIdentifier)
+        }
+    }
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     private let viewModel: RepositoriesViewModel = RepositoriesViewModelImpl()
@@ -25,23 +33,31 @@ class RepositoriesViewController: UIViewController {
     
     @IBAction private func segmentedControlDidChange(sender: UISegmentedControl) {
         self.viewModel.segmentedControlDidChange(viewType: RepoViewType(rawValue: sender.selectedSegmentIndex) ?? .day)
-        self.collectionView.reloadData()
     }
 }
 
-extension RepositoriesViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension RepositoriesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.viewModel.dataSource?.count ?? 0
+        return self.viewModel.dataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellIdentifier, for: indexPath) as! RepoCollectionViewCell
+        cell.configure(repo: self.viewModel.dataSource[indexPath.row])
+        return cell as! UICollectionViewCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return self.viewModel.cellSize
     }
 }
 
 extension RepositoriesViewController: RepositoriesViewModelDelegate {
+    
     func getReposOnComplete() {
         self.collectionView.reloadData()
+        self.collectionView.layoutIfNeeded()
     }
     
     func getReposDidFail(error: String) {

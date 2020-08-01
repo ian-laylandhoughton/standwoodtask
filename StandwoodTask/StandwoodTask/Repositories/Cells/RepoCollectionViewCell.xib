@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RepoCollectionViewCellImpl" customModule="StandwoodTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DNQ-4T-RKl">
+                        <rect key="frame" x="20" y="20" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="95b-pP-3s8"/>
+                            <constraint firstAttribute="height" constant="50" id="uiN-6g-r8F"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ib-GM-VjQ">
+                        <rect key="frame" x="80" y="20" width="224" height="22"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toF-bC-oRA">
+                        <rect key="frame" x="80" y="47" width="224" height="18"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="ajB-SW-fnq">
+                        <rect key="frame" x="364" y="30" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Ax4-S1-Jbr"/>
+                            <constraint firstAttribute="width" constant="30" id="OUP-dl-MBb"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8in-Rz-dPY">
+                        <rect key="frame" x="324" y="30" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="7yG-0d-5RE"/>
+                            <constraint firstAttribute="height" constant="30" id="LOP-pa-hgO"/>
+                        </constraints>
+                        <state key="normal" image="FavouriteUnselected"/>
+                        <state key="selected" image="FavouriteSelected"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DNQ-4T-RKl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="1oM-Lb-8oI"/>
+                <constraint firstItem="5Ib-GM-VjQ" firstAttribute="top" secondItem="DNQ-4T-RKl" secondAttribute="top" id="45H-Sp-0fA"/>
+                <constraint firstAttribute="trailing" secondItem="ajB-SW-fnq" secondAttribute="trailing" constant="20" id="6x2-w3-gYA"/>
+                <constraint firstItem="5Ib-GM-VjQ" firstAttribute="leading" secondItem="DNQ-4T-RKl" secondAttribute="trailing" constant="10" id="Fb6-mn-2aN"/>
+                <constraint firstItem="toF-bC-oRA" firstAttribute="trailing" secondItem="5Ib-GM-VjQ" secondAttribute="trailing" id="N8g-DL-U2e"/>
+                <constraint firstItem="toF-bC-oRA" firstAttribute="leading" secondItem="5Ib-GM-VjQ" secondAttribute="leading" id="Tn1-95-bo7"/>
+                <constraint firstItem="8in-Rz-dPY" firstAttribute="leading" secondItem="5Ib-GM-VjQ" secondAttribute="trailing" constant="20" id="UQ2-2Y-K4T"/>
+                <constraint firstItem="8in-Rz-dPY" firstAttribute="centerY" secondItem="DNQ-4T-RKl" secondAttribute="centerY" id="VDi-Ry-IdF"/>
+                <constraint firstItem="DNQ-4T-RKl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="VhZ-Dm-mwN"/>
+                <constraint firstItem="ajB-SW-fnq" firstAttribute="leading" secondItem="8in-Rz-dPY" secondAttribute="trailing" constant="10" id="aN3-7G-eyd"/>
+                <constraint firstItem="toF-bC-oRA" firstAttribute="top" secondItem="5Ib-GM-VjQ" secondAttribute="bottom" constant="5" id="ite-KF-RUV"/>
+                <constraint firstAttribute="bottom" secondItem="DNQ-4T-RKl" secondAttribute="bottom" constant="20" id="uFz-4l-My6"/>
+                <constraint firstItem="ajB-SW-fnq" firstAttribute="centerY" secondItem="DNQ-4T-RKl" secondAttribute="centerY" id="zO3-hA-Ufz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="414" height="90"/>
+            <connections>
+                <outlet property="avatarImageView" destination="DNQ-4T-RKl" id="0rs-Ra-ai1"/>
+                <outlet property="descriptionLabel" destination="toF-bC-oRA" id="d3z-UF-hwC"/>
+                <outlet property="favouriteButton" destination="8in-Rz-dPY" id="fXD-gZ-xWF"/>
+                <outlet property="titleLabel" destination="5Ib-GM-VjQ" id="jbM-7l-JKd"/>
+            </connections>
+            <point key="canvasLocation" x="404.34782608695656" y="166.74107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ChevronRight" width="30" height="30"/>
+        <image name="FavouriteSelected" width="96" height="96"/>
+        <image name="FavouriteUnselected" width="96" height="96"/>
+    </resources>
+</document>
