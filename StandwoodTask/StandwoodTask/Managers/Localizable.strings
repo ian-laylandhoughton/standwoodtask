@@ -6,6 +6,11 @@
   Copyright © 2020 Ian Layland-Houghton. All rights reserved.
 */
 
-// Repositories
+// Global
+"generic_error_title" = "Error";
+"generic_error_description" = "Hmm, something went wrong";
+"retry" = "Retry";
+"cancel" = "Cancel";
 
+// Repositories
 "repositories_title" = "Repositories";

@@ -19,10 +19,12 @@ class RepositoriesViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = self.viewModel.screenTitle
+        self.viewModel.delegate = self
+        self.segmentedControlDidChange(sender: self.segmentedControl)
     }
     
-    @IBAction private func segmentedControlDidChange(sender: UISegmentedControl){
-        self.viewModel.segmentedControlDidChange(viewType: ViewType(rawValue: sender.selectedSegmentIndex) ?? .day)
+    @IBAction private func segmentedControlDidChange(sender: UISegmentedControl) {
+        self.viewModel.segmentedControlDidChange(viewType: RepoViewType(rawValue: sender.selectedSegmentIndex) ?? .day)
         self.collectionView.reloadData()
     }
 }
@@ -34,5 +36,21 @@ extension RepositoriesViewController: UICollectionViewDataSource, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
+    }
+}
+
+extension RepositoriesViewController: RepositoriesViewModelDelegate {
+    func getReposOnComplete() {
+        self.collectionView.reloadData()
+    }
+    
+    func getReposDidFail(error: String) {
+        let alertController = UIAlertController(title: NSLocalizedString("generic_error_title", comment: "Error title"), message: error, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("retry", comment: "Retry"), style: .default, handler: { _ in
+            
+        }))
+        
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("cancel", comment: "Cancel"), style: .cancel, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
 }
