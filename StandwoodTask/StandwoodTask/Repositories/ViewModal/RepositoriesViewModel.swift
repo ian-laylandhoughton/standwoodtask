@@ -8,12 +8,27 @@
 
 import UIKit
 
+enum ViewType: Int {
+    case day
+    case week
+    case month
+}
+
 protocol RepositoriesViewModel: AnyObject {
     var screenTitle: String { get }
+    var dataSource: [String]? { get }
+    
+    func segmentedControlDidChange(viewType: ViewType)
 }
 
 class RepositoriesViewModelImpl: RepositoriesViewModel {
     var screenTitle: String {
         return NSLocalizedString("repositories_title", comment: "Repositories title")
+    }
+    
+    var dataSource: [String]?
+    
+    func segmentedControlDidChange(viewType: ViewType) {
+
     }
 }

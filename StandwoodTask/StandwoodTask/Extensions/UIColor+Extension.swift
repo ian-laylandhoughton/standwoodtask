@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor{
-    class func standwoodBackgroundGrey() -> UIColor{
-        return UIColor(red: 247.0/255.0, green: 247.0/255.0, blue: 247.0/255.0, alpha: 1.0)
+    class func standwoodBackgroundGrey() -> UIColor {
+        return UIColor(named: "standwoodBackgroundGrey")!
     }
 }
