@@ -70,5 +70,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AdobeGothicStd-Bold.otf</string>
+		<string>applegothic.ttf</string>
+	</array>
 </dict>
 </plist>
