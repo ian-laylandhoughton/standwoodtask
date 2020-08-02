@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LoadingCollectionViewCell" customModule="StandwoodTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mVU-7o-Zta">
+                        <rect key="frame" x="144.5" y="39.5" width="37" height="37"/>
+                        <color key="color" red="0.3803921569" green="0.3803921569" blue="0.41568627450000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNQ-6q-ChF">
+                        <rect key="frame" x="127" y="12.5" width="72.5" height="22"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mVU-7o-Zta" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="BdM-Kx-uYs"/>
+                <constraint firstItem="zNQ-6q-ChF" firstAttribute="centerX" secondItem="mVU-7o-Zta" secondAttribute="centerX" id="G6M-F8-rKq"/>
+                <constraint firstItem="mVU-7o-Zta" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="ds2-Xl-NT1"/>
+                <constraint firstItem="mVU-7o-Zta" firstAttribute="top" secondItem="zNQ-6q-ChF" secondAttribute="bottom" constant="5" id="q3r-4b-YZv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="326" height="72"/>
+            <point key="canvasLocation" x="337.68115942028987" y="160.71428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -24,7 +24,9 @@ protocol RepositoriesViewModel: AnyObject {
     var cellSize: CGSize { get }
     var dataSource: [GitHubRepo] { get }
     var delegate: RepositoriesViewModelDelegate? { get set }
+    var hasMoreRepos: Bool { get }
     func segmentedControlDidChange(viewType: RepoViewType)
+    func willDiplayCell(indexPath: IndexPath)
 }
 
 class RepositoriesViewModelImpl: RepositoriesViewModel {
@@ -39,19 +41,28 @@ class RepositoriesViewModelImpl: RepositoriesViewModel {
         return CGSize(width: UIScreen.main.bounds.width - self.cellPadding, height: self.cellHeight)
     }
     
+    var hasMoreRepos: Bool {
+        return self.dataSource.count != self.totalNumberOfRepos
+    }
+    
     var dataSource: [GitHubRepo] = []
     var delegate: RepositoriesViewModelDelegate?
+    
     private var currentRepoViewType: RepoViewType = .day
     private var pageNumber: Int = 1
+    private var totalNumberOfRepos: Int = 0
     
     private func performRequest() {
         let request = GetRepositoriesRequestImpl()
-        request.getRepositories(repoViewType: self.currentRepoViewType, pageNumber: self.pageNumber, completion: { repos in
-            guard let unwrappedRepos = repos else {
+        request.getRepositories(repoViewType: self.currentRepoViewType, pageNumber: self.pageNumber, completion: { result in
+            
+            guard let unwrappedRepos = result.repos else {
                 self.delegate?.getReposOnComplete()
                 return
             }
+            self.totalNumberOfRepos = result.totalRepos
             self.dataSource.append(contentsOf: unwrappedRepos)
+                        
             DispatchQueue.main.async {
                 self.delegate?.getReposOnComplete()
             }
@@ -65,8 +76,16 @@ class RepositoriesViewModelImpl: RepositoriesViewModel {
     
     func segmentedControlDidChange(viewType: RepoViewType) {
         self.dataSource.removeAll()
+        self.totalNumberOfRepos = 0
         self.currentRepoViewType = viewType
         self.pageNumber = 1
         self.performRequest()
+    }
+    
+    func willDiplayCell(indexPath: IndexPath) {
+        if indexPath.row == (self.dataSource.count - 2) && self.hasMoreRepos {
+            self.pageNumber += 1
+            self.performRequest()
+        }
     }
 }

@@ -11,13 +11,18 @@ import StanwoodCore
 
 class RepositoriesViewController: UIViewController {
 
-    private let cellIdentifier = "repoCell"
-    private let cellNibName = "RepoCollectionViewCell"
+    private let repoCellIdentifier = "repoCell"
+    private let repoCellNibName = "RepoCollectionViewCell"
+    private let loadingCellIdentifier = "loadingCell"
+    private let loadingCllNibName = "LoadingCollectionViewCell"
     
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
-            let repoCellNib = UINib(nibName: self.cellNibName, bundle: nil)
-            self.collectionView.register(repoCellNib, forCellWithReuseIdentifier: self.cellIdentifier)
+            let repoCellNib = UINib(nibName: self.repoCellNibName, bundle: nil)
+            self.collectionView.register(repoCellNib, forCellWithReuseIdentifier: self.repoCellIdentifier)
+            
+            let loadingCellNib = UINib(nibName: self.loadingCllNibName, bundle: nil)
+            self.collectionView.register(loadingCellNib, forCellWithReuseIdentifier: self.loadingCellIdentifier)
         }
     }
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -36,22 +41,34 @@ class RepositoriesViewController: UIViewController {
     @IBAction private func segmentedControlDidChange(sender: UISegmentedControl) {
         self.viewModel.segmentedControlDidChange(viewType: RepoViewType(rawValue: sender.selectedSegmentIndex) ?? .day)
         
-        UIView.animate(withDuration: TimeInterval.normal) {
+        UIView.animate(withDuration: TimeInterval.normal, animations: {
             self.collectionView.alpha = CGFloat.Alpha.clear
+        }) { _ in
+            self.collectionView.reloadData() 
+            self.collectionView.setContentOffset(.zero, animated: false)
         }
     }
 }
 
 extension RepositoriesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        self.viewModel.willDiplayCell(indexPath: indexPath)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.viewModel.dataSource.count
+        return self.viewModel.hasMoreRepos ? self.viewModel.dataSource.count + 1 : self.viewModel.dataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellIdentifier, for: indexPath) as! RepoCollectionViewCell
-        cell.configure(repo: self.viewModel.dataSource[indexPath.row], delegate: self)
-        return cell as! UICollectionViewCell
+        if (indexPath.row == self.viewModel.dataSource.count) && self.viewModel.hasMoreRepos {
+            return collectionView.dequeueReusableCell(withReuseIdentifier: self.loadingCellIdentifier, for: indexPath)
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.repoCellIdentifier, for: indexPath) as! RepoCollectionViewCell
+            cell.configure(repo: self.viewModel.dataSource[indexPath.row], delegate: self)
+            
+            return cell as! UICollectionViewCell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -9,11 +9,12 @@
 import UIKit
 
 protocol GetRepositoriesRequest {
-    func getRepositories(repoViewType: RepoViewType, pageNumber: Int, completion: @escaping (_ repos: [GitHubRepo]?) -> Void, errorCallback: @escaping (Error?) -> Void)
+    func getRepositories(repoViewType: RepoViewType, pageNumber: Int, completion: @escaping ((repos: [GitHubRepo]?, totalRepos: Int)) -> Void, errorCallback: @escaping (Error?) -> Void)
 }
 
 class GetRepositoriesRequestImpl: GetRepositoriesRequest {
-    func getRepositories(repoViewType: RepoViewType, pageNumber: Int, completion: @escaping ([GitHubRepo]?) -> Void, errorCallback: @escaping (Error?) -> Void) {
+    
+    func getRepositories(repoViewType: RepoViewType, pageNumber: Int, completion: @escaping ((repos: [GitHubRepo]?, totalRepos: Int)) -> Void, errorCallback: @escaping (Error?) -> Void) {
         guard let dateModifier = self.dateString(repoViewType: repoViewType) else {
             return
         }
@@ -30,7 +31,7 @@ class GetRepositoriesRequestImpl: GetRepositoriesRequest {
             do {
                 let gitData = try JSONDecoder().decode(GitHubRepoList.self, from: data)
                 DispatchQueue.main.async {
-                    completion(gitData.repos)
+                    completion((gitData.repos, gitData.totalRepos))
                 }
             } catch {
                 DispatchQueue.main.async {

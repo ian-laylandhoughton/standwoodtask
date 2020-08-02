@@ -9,9 +9,11 @@
 import Foundation
 
 struct GitHubRepoList: Codable {
+    let totalRepos: Int
     let repos: [GitHubRepo]?
     
     enum CodingKeys: String, CodingKey {
+        case totalRepos = "total_count"
         case repos = "items"
     }
 }
