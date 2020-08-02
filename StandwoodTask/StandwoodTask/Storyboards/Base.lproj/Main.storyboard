@@ -115,8 +115,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-Zc-Ap4">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="42"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2px-Ml-2nT">
-                                                        <rect key="frame" x="20" y="10" width="22" height="22"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="command" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2px-Ml-2nT">
+                                                        <rect key="frame" x="20" y="11" width="22" height="20"/>
+                                                        <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.2274509804" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="22" id="Rsg-rJ-hFB"/>
                                                             <constraint firstAttribute="height" constant="22" id="T1o-eg-38S"/>
@@ -142,7 +143,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99f-vi-VhC">
                                                 <rect key="frame" x="0.0" y="42" width="394" height="42"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o8x-r3-c7C">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="o8x-r3-c7C">
                                                         <rect key="frame" x="20" y="10" width="22" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="22" id="DIh-bN-pq6"/>
@@ -169,8 +170,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5c-5m-faI">
                                                 <rect key="frame" x="0.0" y="84" width="394" height="42"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zm5-vy-3eR">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zm5-vy-3eR">
                                                         <rect key="frame" x="20" y="10" width="22" height="22"/>
+                                                        <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.2274509804" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="22" id="5nS-xd-wla"/>
                                                             <constraint firstAttribute="width" constant="22" id="b4o-Uy-g6E"/>
@@ -196,8 +198,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRt-Pz-yAQ">
                                                 <rect key="frame" x="0.0" y="126" width="394" height="42"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BwF-Jh-QOa">
-                                                        <rect key="frame" x="20" y="10" width="22" height="22"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BwF-Jh-QOa">
+                                                        <rect key="frame" x="20" y="10.5" width="22" height="21"/>
+                                                        <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.2274509804" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="22" id="f8z-6a-1q8"/>
                                                             <constraint firstAttribute="height" constant="22" id="pTK-4P-GS8"/>
@@ -350,8 +353,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="command" catalog="system" width="128" height="115"/>
         <image name="first" width="30" height="30"/>
+        <image name="forkIcon" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <namedColor name="standwoodBackgroundGrey">
             <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

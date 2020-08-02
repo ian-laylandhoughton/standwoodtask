@@ -40,8 +40,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="ajB-SW-fnq">
-                        <rect key="frame" x="379" y="30" width="30" height="30"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ajB-SW-fnq">
+                        <rect key="frame" x="379" y="32" width="30" height="26.5"/>
+                        <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.2274509804" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Ax4-S1-Jbr"/>
                             <constraint firstAttribute="width" constant="30" id="OUP-dl-MBb"/>
@@ -53,8 +54,9 @@
                             <constraint firstAttribute="width" constant="30" id="7yG-0d-5RE"/>
                             <constraint firstAttribute="height" constant="30" id="LOP-pa-hgO"/>
                         </constraints>
-                        <state key="normal" image="FavouriteUnselected"/>
-                        <state key="selected" image="FavouriteSelected"/>
+                        <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.2274509804" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="bookmark" catalog="system"/>
+                        <state key="selected" image="bookmark.fill" catalog="system"/>
                         <connections>
                             <action selector="favouritesButtonPressed" destination="gTV-IL-0wX" eventType="touchUpInside" id="Qe7-XY-zsZ"/>
                         </connections>
@@ -99,8 +101,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ChevronRight" width="30" height="30"/>
-        <image name="FavouriteSelected" width="96" height="96"/>
-        <image name="FavouriteUnselected" width="96" height="96"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
     </resources>
 </document>
