@@ -18,6 +18,7 @@
 		C92A813C24D5F5F300E46E1C /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A813B24D5F5F300E46E1C /* FavouritesManager.swift */; };
 		C92A813F24D6EE8D00E46E1C /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A813D24D6EE8D00E46E1C /* LoadingCollectionViewCell.swift */; };
 		C92A814024D6EE8D00E46E1C /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92A813E24D6EE8D00E46E1C /* LoadingCollectionViewCell.xib */; };
+		C92A814224D7081F00E46E1C /* RepositoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A814124D7081F00E46E1C /* RepositoryDetailViewController.swift */; };
 		C97ACD7E24D5B2000079C7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD7D24D5B2000079C7C4 /* AppDelegate.swift */; };
 		C97ACD8024D5B2000079C7C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD7F24D5B2000079C7C4 /* SceneDelegate.swift */; };
 		C97ACD8224D5B2000079C7C4 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD8124D5B2000079C7C4 /* RepositoriesViewController.swift */; };
@@ -62,6 +63,7 @@
 		C92A813B24D5F5F300E46E1C /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
 		C92A813D24D6EE8D00E46E1C /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
 		C92A813E24D6EE8D00E46E1C /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
+		C92A814124D7081F00E46E1C /* RepositoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewController.swift; sourceTree = "<group>"; };
 		C97ACD7A24D5B2000079C7C4 /* StandwoodTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandwoodTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97ACD7D24D5B2000079C7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97ACD7F24D5B2000079C7C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				C97ACD8124D5B2000079C7C4 /* RepositoriesViewController.swift */,
+				C92A814124D7081F00E46E1C /* RepositoryDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				C97ACD8224D5B2000079C7C4 /* RepositoriesViewController.swift in Sources */,
 				C92A813F24D6EE8D00E46E1C /* LoadingCollectionViewCell.swift in Sources */,
 				C97ACD7E24D5B2000079C7C4 /* AppDelegate.swift in Sources */,
+				C92A814224D7081F00E46E1C /* RepositoryDetailViewController.swift in Sources */,
 				C92A813024D5CB7A00E46E1C /* Constants.swift in Sources */,
 				C92A813C24D5F5F300E46E1C /* FavouritesManager.swift in Sources */,
 				C97ACDA924D5B6210079C7C4 /* UIFont+Extension.swift in Sources */,
