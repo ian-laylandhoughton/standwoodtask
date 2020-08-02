@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StanwoodCore
 
 class RepositoriesViewController: UIViewController {
 
@@ -20,6 +21,7 @@ class RepositoriesViewController: UIViewController {
         }
     }
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private let viewModel: RepositoriesViewModel = RepositoriesViewModelImpl()
     
@@ -33,6 +35,10 @@ class RepositoriesViewController: UIViewController {
     
     @IBAction private func segmentedControlDidChange(sender: UISegmentedControl) {
         self.viewModel.segmentedControlDidChange(viewType: RepoViewType(rawValue: sender.selectedSegmentIndex) ?? .day)
+        
+        UIView.animate(withDuration: TimeInterval.normal) {
+            self.collectionView.alpha = CGFloat.Alpha.clear
+        }
     }
 }
 
@@ -58,6 +64,10 @@ extension RepositoriesViewController: RepositoriesViewModelDelegate {
     func getReposOnComplete() {
         self.collectionView.reloadData()
         self.collectionView.layoutIfNeeded()
+        
+        UIView.animate(withDuration: TimeInterval.normal) {
+            self.collectionView.alpha = CGFloat.Alpha.full
+        }
     }
     
     func getReposDidFail(error: String) {

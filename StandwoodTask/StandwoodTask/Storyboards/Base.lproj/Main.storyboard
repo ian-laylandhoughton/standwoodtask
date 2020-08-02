@@ -30,6 +30,10 @@
                                             <action selector="segmentedControlDidChangeWithSender:" destination="9pv-A4-QxB" eventType="valueChanged" id="39q-Wh-p41"/>
                                         </connections>
                                     </segmentedControl>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-sB-nFs">
+                                        <rect key="frame" x="178.5" y="318" width="37" height="37"/>
+                                        <color key="color" red="0.38039215686274508" green="0.38039215686274508" blue="0.41568627450980389" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JOy-FL-qYv">
                                         <rect key="frame" x="0.0" y="91" width="394" height="582"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -49,9 +53,11 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="JOy-FL-qYv" secondAttribute="trailing" id="GMk-yU-pLr"/>
+                                    <constraint firstItem="4t7-sB-nFs" firstAttribute="centerX" secondItem="vie-RW-HES" secondAttribute="centerX" id="JN5-uL-LaN"/>
                                     <constraint firstAttribute="trailing" secondItem="E0z-KL-AHD" secondAttribute="trailing" constant="17" id="SpL-7B-sRs"/>
                                     <constraint firstAttribute="bottom" secondItem="JOy-FL-qYv" secondAttribute="bottom" id="cs1-Ra-XTk"/>
                                     <constraint firstItem="E0z-KL-AHD" firstAttribute="top" secondItem="vie-RW-HES" secondAttribute="top" constant="30" id="hqe-CI-8uu"/>
+                                    <constraint firstItem="4t7-sB-nFs" firstAttribute="centerY" secondItem="vie-RW-HES" secondAttribute="centerY" id="obI-MB-877"/>
                                     <constraint firstItem="JOy-FL-qYv" firstAttribute="top" secondItem="E0z-KL-AHD" secondAttribute="bottom" constant="30" id="ppD-a3-1XH"/>
                                     <constraint firstItem="JOy-FL-qYv" firstAttribute="leading" secondItem="vie-RW-HES" secondAttribute="leading" id="vMy-KD-ZvJ"/>
                                     <constraint firstItem="E0z-KL-AHD" firstAttribute="leading" secondItem="vie-RW-HES" secondAttribute="leading" constant="17" id="x0k-b4-cWO"/>
@@ -69,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="PaG-WD-bMT"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="4t7-sB-nFs" id="DGQ-np-i4j"/>
                         <outlet property="collectionView" destination="JOy-FL-qYv" id="58H-2l-NW0"/>
                         <outlet property="segmentedControl" destination="E0z-KL-AHD" id="4rV-Al-cW7"/>
                     </connections>
