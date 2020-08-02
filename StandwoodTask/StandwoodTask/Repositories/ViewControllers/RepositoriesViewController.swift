@@ -11,6 +11,7 @@ import StanwoodCore
 
 class RepositoriesViewController: UIViewController {
 
+    static let DetailSegueIdentifier = "RepoListToRepoDetailSegue"
     private let repoCellIdentifier = "repoCell"
     private let repoCellNibName = "RepoCollectionViewCell"
     private let loadingCellIdentifier = "loadingCell"
@@ -29,13 +30,30 @@ class RepositoriesViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private let viewModel: RepositoriesViewModel = RepositoriesViewModelImpl()
+    private var selectedRepo: GitHubRepo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = self.viewModel.screenTitle
         self.viewModel.delegate = self
         self.segmentedControlDidChange(sender: self.segmentedControl)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.title = self.viewModel.screenTitle
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == RepositoriesViewController.DetailSegueIdentifier {
+            guard let detailVC = segue.destination as? RepositoryDetailViewController, let repo = self.selectedRepo else {
+                return
+            }
+            
+            detailVC.configure(repo: repo)
+            self.navigationItem.backBarButtonItem = UIBarButtonItem(title: NSLocalizedString("back", comment: "Back"), style: .plain, target: nil, action: nil)
+        }
     }
     
     @IBAction private func segmentedControlDidChange(sender: UISegmentedControl) {
@@ -73,6 +91,11 @@ extension RepositoriesViewController: UICollectionViewDataSource, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return self.viewModel.cellSize
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedRepo = self.viewModel.dataSource[indexPath.row]
+        self.performSegue(withIdentifier: RepositoriesViewController.DetailSegueIdentifier, sender: nil)
     }
 }
 

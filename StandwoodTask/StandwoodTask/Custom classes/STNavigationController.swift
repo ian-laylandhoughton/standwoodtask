@@ -15,7 +15,6 @@ class STNavigationController: UINavigationController {
 
         self.navigationBar.prefersLargeTitles = true
         self.navigationBar.backgroundColor = UIColor.standwoodBackgroundGrey()
-        self.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
-                                                       NSAttributedString.Key.font: UIFont.standwoodNavBarFont()]
+        self.navigationItem.largeTitleDisplayMode = .always
     }
 }

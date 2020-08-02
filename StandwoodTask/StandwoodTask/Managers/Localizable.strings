@@ -11,6 +11,7 @@
 "generic_error_description" = "Hmm, something went wrong";
 "retry" = "Retry";
 "cancel" = "Cancel";
+"back" = "Back";
 
 // Repositories
 "repositories_title" = "Repositories";
