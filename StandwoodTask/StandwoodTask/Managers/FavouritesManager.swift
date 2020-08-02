@@ -10,6 +10,10 @@ import Foundation
 
 struct FavouritesManager {
     
+    static func allRepos() -> [GitHubRepo] {
+        return self.getFavouriteRepos()
+    }
+    
     static func saveRepo(repo: GitHubRepo) {
         var savedRepos = self.getFavouriteRepos()
         savedRepos.append(repo)

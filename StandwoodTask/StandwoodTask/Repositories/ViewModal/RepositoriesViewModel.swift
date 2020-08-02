@@ -19,7 +19,9 @@ protocol RepositoriesViewModelDelegate {
     func getReposDidFail(error: String)
 }
 
-protocol RepositoriesViewModel: AnyObject {
+protocol ReposViewModel {
+    var cellHeight: CGFloat { get }
+    var cellPadding: CGFloat { get }
     var screenTitle: String { get }
     var cellSize: CGSize { get }
     var dataSource: [GitHubRepo] { get }
@@ -29,9 +31,9 @@ protocol RepositoriesViewModel: AnyObject {
     func willDiplayCell(indexPath: IndexPath)
 }
 
-class RepositoriesViewModelImpl: RepositoriesViewModel {
-    private let cellHeight: CGFloat = 90
-    private let cellPadding: CGFloat = 20
+class RepositoriesViewModelImpl: ReposViewModel {
+    let cellHeight: CGFloat = 90
+    let cellPadding: CGFloat = 20
     
     var screenTitle: String {
         return NSLocalizedString("repositories_title", comment: "Repositories title")

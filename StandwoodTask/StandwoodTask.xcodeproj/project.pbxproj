@@ -20,10 +20,11 @@
 		C92A814024D6EE8D00E46E1C /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92A813E24D6EE8D00E46E1C /* LoadingCollectionViewCell.xib */; };
 		C92A814224D7081F00E46E1C /* RepositoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A814124D7081F00E46E1C /* RepositoryDetailViewController.swift */; };
 		C92A814724D72F3B00E46E1C /* RepositoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A814624D72F3B00E46E1C /* RepositoryDetailViewModel.swift */; };
+		C93137A924D7452E00164CEC /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93137A824D7452E00164CEC /* FavouritesViewModel.swift */; };
 		C97ACD7E24D5B2000079C7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD7D24D5B2000079C7C4 /* AppDelegate.swift */; };
 		C97ACD8024D5B2000079C7C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD7F24D5B2000079C7C4 /* SceneDelegate.swift */; };
 		C97ACD8224D5B2000079C7C4 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD8124D5B2000079C7C4 /* RepositoriesViewController.swift */; };
-		C97ACD8424D5B2000079C7C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD8324D5B2000079C7C4 /* SecondViewController.swift */; };
+		C97ACD8424D5B2000079C7C4 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACD8324D5B2000079C7C4 /* FavouriteViewController.swift */; };
 		C97ACD8724D5B2000079C7C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97ACD8524D5B2000079C7C4 /* Main.storyboard */; };
 		C97ACD8924D5B2010079C7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97ACD8824D5B2010079C7C4 /* Assets.xcassets */; };
 		C97ACD8C24D5B2010079C7C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97ACD8A24D5B2010079C7C4 /* LaunchScreen.storyboard */; };
@@ -66,11 +67,12 @@
 		C92A813E24D6EE8D00E46E1C /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
 		C92A814124D7081F00E46E1C /* RepositoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewController.swift; sourceTree = "<group>"; };
 		C92A814624D72F3B00E46E1C /* RepositoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewModel.swift; sourceTree = "<group>"; };
+		C93137A824D7452E00164CEC /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
 		C97ACD7A24D5B2000079C7C4 /* StandwoodTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandwoodTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97ACD7D24D5B2000079C7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97ACD7F24D5B2000079C7C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C97ACD8124D5B2000079C7C4 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
-		C97ACD8324D5B2000079C7C4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C97ACD8324D5B2000079C7C4 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		C97ACD8624D5B2000079C7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C97ACD8824D5B2010079C7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C97ACD8B24D5B2010079C7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		C93137AA24D7453400164CEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C93137A824D7452E00164CEC /* FavouritesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C97ACD7124D5B2000079C7C4 = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +220,8 @@
 		C97ACDA324D5B20F0079C7C4 /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
-				C97ACD8324D5B2000079C7C4 /* SecondViewController.swift */,
+				C93137AA24D7453400164CEC /* ViewModel */,
+				C989260924D7367500FC7308 /* ViewController */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -302,6 +313,14 @@
 				C92A813E24D6EE8D00E46E1C /* LoadingCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C989260924D7367500FC7308 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C97ACD8324D5B2000079C7C4 /* FavouriteViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F47370CA4D221C292B4B3B69 /* Frameworks */ = {
@@ -444,9 +463,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93137A924D7452E00164CEC /* FavouritesViewModel.swift in Sources */,
 				C92A812E24D5CA0E00E46E1C /* GetRepositoriesRequest.swift in Sources */,
 				C97ACDB424D5BADA0079C7C4 /* STNavigationController.swift in Sources */,
-				C97ACD8424D5B2000079C7C4 /* SecondViewController.swift in Sources */,
+				C97ACD8424D5B2000079C7C4 /* FavouriteViewController.swift in Sources */,
 				C97ACDBE24D5C52D0079C7C4 /* GithubRepo.swift in Sources */,
 				C92A813724D5DFAC00E46E1C /* RepoCollectionViewCell.swift in Sources */,
 				C97ACDBA24D5BD8D0079C7C4 /* RepositoriesViewModel.swift in Sources */,

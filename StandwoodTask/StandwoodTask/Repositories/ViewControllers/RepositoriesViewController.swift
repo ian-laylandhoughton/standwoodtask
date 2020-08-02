@@ -9,7 +9,7 @@
 import UIKit
 import StanwoodCore
 
-class RepositoriesViewController: UIViewController {
+class RepositoriesViewController: UIViewController, RepoCollectionViewCellDelegate {
 
     static let DetailSegueIdentifier = "RepoListToRepoDetailSegue"
     private let repoCellIdentifier = "repoCell"
@@ -29,20 +29,28 @@ class RepositoriesViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    private let viewModel: RepositoriesViewModel = RepositoriesViewModelImpl()
-    private var selectedRepo: GitHubRepo?
+    var viewModel: ReposViewModel!
+    var selectedRepo: GitHubRepo?
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.viewModel = RepositoriesViewModelImpl()
         self.viewModel.delegate = self
         self.segmentedControlDidChange(sender: self.segmentedControl)
     }
+    
+    private func setViewModel() {}
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.title = self.viewModel.screenTitle
+        self.collectionView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,6 +73,14 @@ class RepositoriesViewController: UIViewController {
             self.collectionView.reloadData() 
             self.collectionView.setContentOffset(.zero, animated: false)
         }
+    }
+    
+    func didToggleFavouriteOnRepo(repo: GitHubRepo) {
+        FavouritesManager.isFavourite(repo: repo) ? FavouritesManager.removeRepo(repo: repo) : FavouritesManager.saveRepo(repo: repo)
+        guard let index = self.viewModel.dataSource.firstIndex(of: repo) else {
+            return
+        }
+        self.collectionView.reloadItems(at: [IndexPath(row: index, section: 0)])
     }
 }
 
@@ -118,15 +134,5 @@ extension RepositoriesViewController: RepositoriesViewModelDelegate {
         
         alertController.addAction(UIAlertAction(title: NSLocalizedString("cancel", comment: "Cancel"), style: .cancel, handler: nil))
         self.present(alertController, animated: true, completion: nil)
-    }
-}
-
-extension RepositoriesViewController: RepoCollectionViewCellDelegate {
-    func didToggleFavouriteOnRepo(repo: GitHubRepo) {
-        FavouritesManager.isFavourite(repo: repo) ? FavouritesManager.removeRepo(repo: repo) : FavouritesManager.saveRepo(repo: repo)
-        guard let index = self.viewModel.dataSource.firstIndex(of: repo) else {
-            return
-        }
-        self.collectionView.reloadItems(at: [IndexPath(row: index, section: 0)])
     }
 }

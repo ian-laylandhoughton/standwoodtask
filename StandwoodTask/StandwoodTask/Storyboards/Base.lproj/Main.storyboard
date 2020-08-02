@@ -274,36 +274,62 @@
             </objects>
             <point key="canvasLocation" x="2542.0289855072465" y="-320.08928571428572"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Favourite View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="StandwoodTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="FavouriteViewController" customModule="StandwoodTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jez-mK-ulQ">
+                                <rect key="frame" x="10" y="140" width="394" height="673"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-b4-DG3">
+                                        <rect key="frame" x="178.5" y="318" width="37" height="37"/>
+                                        <color key="color" red="0.3803921569" green="0.3803921569" blue="0.41568627450000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jPf-hY-rot">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="673"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GyT-c4-MwM">
+                                            <size key="itemSize" width="0.0" height="0.0"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="8rJ-Kc-sve" id="f2Q-jw-0ea"/>
+                                            <outlet property="delegate" destination="8rJ-Kc-sve" id="FMZ-4m-h88"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstItem="jPf-hY-rot" firstAttribute="top" secondItem="jez-mK-ulQ" secondAttribute="top" id="76j-Da-c1u"/>
+                                    <constraint firstAttribute="trailing" secondItem="jPf-hY-rot" secondAttribute="trailing" id="ER7-EV-8hZ"/>
+                                    <constraint firstItem="5Zl-b4-DG3" firstAttribute="centerY" secondItem="jez-mK-ulQ" secondAttribute="centerY" id="afM-aP-95t"/>
+                                    <constraint firstAttribute="bottom" secondItem="jPf-hY-rot" secondAttribute="bottom" id="kac-9e-UJH"/>
+                                    <constraint firstItem="5Zl-b4-DG3" firstAttribute="centerX" secondItem="jez-mK-ulQ" secondAttribute="centerX" id="mDg-TN-x3C"/>
+                                    <constraint firstItem="jPf-hY-rot" firstAttribute="leading" secondItem="jez-mK-ulQ" secondAttribute="leading" id="zuq-9S-VTA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="jez-mK-ulQ" secondAttribute="bottom" id="Inb-Ys-ITu"/>
+                            <constraint firstItem="jez-mK-ulQ" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="10" id="LJ2-0R-YsA"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="jez-mK-ulQ" secondAttribute="trailing" constant="10" id="dUX-kc-WXz"/>
+                            <constraint firstItem="jez-mK-ulQ" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="pc0-NE-Mu2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" id="dIC-Ow-vRa"/>
+                    <connections>
+                        <outlet property="collectionView" destination="jPf-hY-rot" id="Azz-BK-wd7"/>
+                        <segue destination="GHj-sg-P0e" kind="show" identifier="RepoListToRepoDetailSegue" id="9Ag-BK-rPQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -372,6 +398,9 @@
             <point key="canvasLocation" x="747.82608695652175" y="359.59821428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Ag-BK-rPQ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="command" catalog="system" width="128" height="115"/>
