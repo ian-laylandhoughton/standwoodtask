@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DNQ-4T-RKl">
-                        <rect key="frame" x="20" y="20" width="50" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="95b-pP-3s8"/>
                             <constraint firstAttribute="height" constant="50" id="uiN-6g-r8F"/>
@@ -29,26 +29,26 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ib-GM-VjQ">
-                        <rect key="frame" x="80" y="20" width="224" height="22"/>
+                        <rect key="frame" x="60" y="20" width="264" height="22"/>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toF-bC-oRA">
-                        <rect key="frame" x="80" y="47" width="224" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toF-bC-oRA">
+                        <rect key="frame" x="60" y="47" width="264" height="18"/>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="ajB-SW-fnq">
-                        <rect key="frame" x="364" y="30" width="30" height="30"/>
+                        <rect key="frame" x="384" y="30" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Ax4-S1-Jbr"/>
                             <constraint firstAttribute="width" constant="30" id="OUP-dl-MBb"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8in-Rz-dPY">
-                        <rect key="frame" x="324" y="30" width="30" height="30"/>
+                        <rect key="frame" x="344" y="30" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="7yG-0d-5RE"/>
                             <constraint firstAttribute="height" constant="30" id="LOP-pa-hgO"/>
@@ -58,10 +58,11 @@
                     </button>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="DNQ-4T-RKl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="1oM-Lb-8oI"/>
+                <constraint firstItem="DNQ-4T-RKl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1oM-Lb-8oI"/>
                 <constraint firstItem="5Ib-GM-VjQ" firstAttribute="top" secondItem="DNQ-4T-RKl" secondAttribute="top" id="45H-Sp-0fA"/>
-                <constraint firstAttribute="trailing" secondItem="ajB-SW-fnq" secondAttribute="trailing" constant="20" id="6x2-w3-gYA"/>
+                <constraint firstAttribute="trailing" secondItem="ajB-SW-fnq" secondAttribute="trailing" id="6x2-w3-gYA"/>
                 <constraint firstItem="5Ib-GM-VjQ" firstAttribute="leading" secondItem="DNQ-4T-RKl" secondAttribute="trailing" constant="10" id="Fb6-mn-2aN"/>
                 <constraint firstItem="toF-bC-oRA" firstAttribute="trailing" secondItem="5Ib-GM-VjQ" secondAttribute="trailing" id="N8g-DL-U2e"/>
                 <constraint firstItem="toF-bC-oRA" firstAttribute="leading" secondItem="5Ib-GM-VjQ" secondAttribute="leading" id="Tn1-95-bo7"/>

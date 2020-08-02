@@ -29,7 +29,7 @@ protocol RepositoriesViewModel: AnyObject {
 
 class RepositoriesViewModelImpl: RepositoriesViewModel {
     private let cellHeight: CGFloat = 90
-    private let cellPadding: CGFloat = 100
+    private let cellPadding: CGFloat = 20
     
     var screenTitle: String {
         return NSLocalizedString("repositories_title", comment: "Repositories title")
