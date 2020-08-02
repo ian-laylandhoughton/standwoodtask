@@ -26,6 +26,11 @@ class FavouritesViewModelImpl: ReposViewModel {
     
     var delegate: RepositoriesViewModelDelegate?
     var hasMoreRepos: Bool = false
+    
+    func refresh() {
+        // intentionally left blank
+    }
+    
     func segmentedControlDidChange(viewType: RepoViewType) {
         // intentionally left blank
     }

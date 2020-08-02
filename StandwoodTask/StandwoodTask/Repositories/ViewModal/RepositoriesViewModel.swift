@@ -27,8 +27,13 @@ protocol ReposViewModel {
     var dataSource: [GitHubRepo] { get }
     var delegate: RepositoriesViewModelDelegate? { get set }
     var hasMoreRepos: Bool { get }
-    func segmentedControlDidChange(viewType: RepoViewType)
+    func segmentedControlDidChange(viewType: RepoViewType?)
     func willDiplayCell(indexPath: IndexPath)
+    func refresh()
+}
+
+extension ReposViewModel {
+    func segmentedControlDidChange(viewType: RepoViewType? = nil) { }
 }
 
 class RepositoriesViewModelImpl: ReposViewModel {
@@ -76,10 +81,17 @@ class RepositoriesViewModelImpl: ReposViewModel {
         }
     }
     
-    func segmentedControlDidChange(viewType: RepoViewType) {
+    func refresh() {
+        self.segmentedControlDidChange()
+    }
+    
+    func segmentedControlDidChange(viewType: RepoViewType? = nil) {
+        guard let type = viewType == nil ? self.currentRepoViewType : viewType else {
+            return
+        }
         self.dataSource.removeAll()
         self.totalNumberOfRepos = 0
-        self.currentRepoViewType = viewType
+        self.currentRepoViewType = type
         self.pageNumber = 1
         self.performRequest()
     }

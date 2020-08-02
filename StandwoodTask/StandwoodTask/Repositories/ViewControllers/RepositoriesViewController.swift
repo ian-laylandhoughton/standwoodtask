@@ -17,6 +17,8 @@ class RepositoriesViewController: UIViewController, RepoCollectionViewCellDelega
     private let loadingCellIdentifier = "loadingCell"
     private let loadingCllNibName = "LoadingCollectionViewCell"
     
+    var refresher: UIRefreshControl!
+    
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             let repoCellNib = UINib(nibName: self.repoCellNibName, bundle: nil)
@@ -24,6 +26,12 @@ class RepositoriesViewController: UIViewController, RepoCollectionViewCellDelega
             
             let loadingCellNib = UINib(nibName: self.loadingCllNibName, bundle: nil)
             self.collectionView.register(loadingCellNib, forCellWithReuseIdentifier: self.loadingCellIdentifier)
+            
+            self.refresher = UIRefreshControl()
+            self.collectionView!.alwaysBounceVertical = true
+            self.refresher.tintColor = UIColor.red
+            self.refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
+            self.collectionView.refreshControl = self.refresher
         }
     }
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -75,6 +83,16 @@ class RepositoriesViewController: UIViewController, RepoCollectionViewCellDelega
         }
     }
     
+    @objc func loadData() {
+        self.collectionView!.refreshControl?.beginRefreshing()
+        self.viewModel.refresh()
+        self.collectionView.reloadData()
+     }
+
+    func stopRefresher() {
+        self.collectionView.refreshControl?.endRefreshing()
+     }
+    
     func didToggleFavouriteOnRepo(repo: GitHubRepo) {
         FavouritesManager.isFavourite(repo: repo) ? FavouritesManager.removeRepo(repo: repo) : FavouritesManager.saveRepo(repo: repo)
         guard let index = self.viewModel.dataSource.firstIndex(of: repo) else {
@@ -118,6 +136,7 @@ extension RepositoriesViewController: UICollectionViewDataSource, UICollectionVi
 extension RepositoriesViewController: RepositoriesViewModelDelegate {
     
     func getReposOnComplete() {
+        self.stopRefresher()
         self.collectionView.reloadData()
         self.collectionView.layoutIfNeeded()
         
@@ -129,7 +148,7 @@ extension RepositoriesViewController: RepositoriesViewModelDelegate {
     func getReposDidFail(error: String) {
         let alertController = UIAlertController(title: NSLocalizedString("generic_error_title", comment: "Error title"), message: error, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: NSLocalizedString("retry", comment: "Retry"), style: .default, handler: { _ in
-            
+            self.viewModel.segmentedControlDidChange()
         }))
         
         alertController.addAction(UIAlertAction(title: NSLocalizedString("cancel", comment: "Cancel"), style: .cancel, handler: nil))

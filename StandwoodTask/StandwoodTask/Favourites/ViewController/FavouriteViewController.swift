@@ -12,11 +12,11 @@ class FavouriteViewController: RepositoriesViewController {
     
     override func viewDidLoad() {
         self.viewModel = FavouritesViewModelImpl()
+        self.collectionView.refreshControl = nil
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.collectionView.reloadData()
     }
 
