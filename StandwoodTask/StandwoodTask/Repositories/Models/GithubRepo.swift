@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct GitHubRepo: Codable {
+struct GitHubRepo: Codable, Equatable {
     let owner: GithubOwner
     let repoName: String
     let description: String?
@@ -27,5 +27,16 @@ struct GitHubRepo: Codable {
         case forks
         case creationDate = "created_at"
         case githubUrl = "html_url"
+    }
+    
+    static func == (lhs: GitHubRepo, rhs: GitHubRepo) -> Bool {
+        return lhs.owner == rhs.owner &&
+        lhs.repoName == rhs.repoName &&
+        lhs.description == rhs.description &&
+        lhs.stars == rhs.stars &&
+        lhs.language == rhs.language &&
+        lhs.forks == rhs.forks &&
+        lhs.creationDate == rhs.creationDate &&
+        lhs.githubUrl == rhs.githubUrl
     }
 }

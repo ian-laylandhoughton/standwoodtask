@@ -8,12 +8,17 @@
 
 import UIKit
 
-struct GithubOwner: Codable {
+struct GithubOwner: Codable, Equatable {
     let username: String
     let avatarURL: String?
     
     enum CodingKeys: String, CodingKey {
         case username = "login"
         case avatarURL = "avatar_url"
+    }
+    
+    static func == (lhs: GithubOwner, rhs: GithubOwner) -> Bool {
+        return lhs.username == rhs.username &&
+        lhs.avatarURL == rhs.avatarURL
     }
 }

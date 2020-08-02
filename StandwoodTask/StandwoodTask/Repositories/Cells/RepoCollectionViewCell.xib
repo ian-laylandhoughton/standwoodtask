@@ -55,6 +55,9 @@
                         </constraints>
                         <state key="normal" image="FavouriteUnselected"/>
                         <state key="selected" image="FavouriteSelected"/>
+                        <connections>
+                            <action selector="favouritesButtonPressed" destination="gTV-IL-0wX" eventType="touchUpInside" id="Qe7-XY-zsZ"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

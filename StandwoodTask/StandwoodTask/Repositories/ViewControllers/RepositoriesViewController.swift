@@ -44,7 +44,7 @@ extension RepositoriesViewController: UICollectionViewDataSource, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellIdentifier, for: indexPath) as! RepoCollectionViewCell
-        cell.configure(repo: self.viewModel.dataSource[indexPath.row])
+        cell.configure(repo: self.viewModel.dataSource[indexPath.row], delegate: self)
         return cell as! UICollectionViewCell
     }
     
@@ -68,5 +68,15 @@ extension RepositoriesViewController: RepositoriesViewModelDelegate {
         
         alertController.addAction(UIAlertAction(title: NSLocalizedString("cancel", comment: "Cancel"), style: .cancel, handler: nil))
         self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+extension RepositoriesViewController: RepoCollectionViewCellDelegate {
+    func didToggleFavouriteOnRepo(repo: GitHubRepo) {
+        FavouritesManager.isFavourite(repo: repo) ? FavouritesManager.removeRepo(repo: repo) : FavouritesManager.saveRepo(repo: repo)
+        guard let index = self.viewModel.dataSource.firstIndex(of: repo) else {
+            return
+        }
+        self.collectionView.reloadItems(at: [IndexPath(row: index, section: 0)])
     }
 }
