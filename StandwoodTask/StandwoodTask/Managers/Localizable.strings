@@ -15,3 +15,9 @@
 
 // Repositories
 "repositories_title" = "Repositories";
+
+// Repository Detail
+"forks" = " Forks";
+"stars" = " Stars";
+"created_on" = "Created on ";
+

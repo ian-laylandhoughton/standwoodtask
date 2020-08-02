@@ -13,5 +13,5 @@ struct Constants {
     static let favouritesKey = "FavouriteRepos"
     static let standardDateFormat = "yyyy-MM-dd"
     static let formattedDateFormat = "dd/MM/yyyy"
-    static let fullDateFormat = "yyyy-MM-dd'T'HH:mm:ssZyyyy-MM-dd'T'HH:mm:ssZ"
+    static let fullDateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 }

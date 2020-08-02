@@ -96,18 +96,31 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-bI-3A6">
                                 <rect key="frame" x="10" y="140" width="394" height="673"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-7q-QAM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-7q-QAM">
                                         <rect key="frame" x="20" y="30" width="354" height="22"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                         <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.26666666666666666" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yee-SZ-2Y2">
-                                        <rect key="frame" x="174" y="255" width="46" height="48"/>
+                                        <rect key="frame" x="129" y="255" width="136" height="48"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="0N2-5a-Nxv"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Open in Github">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openGithubButtonPressed" destination="GHj-sg-P0e" eventType="touchUpInside" id="jXY-a1-LaE"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="384" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kxa-vP-Bhg">
                                         <rect key="frame" x="0.0" y="67" width="394" height="168"/>
@@ -249,6 +262,13 @@
                         <viewLayoutGuide key="safeArea" id="Hi8-7u-rfe"/>
                     </view>
                     <navigationItem key="navigationItem" id="pJX-4R-CYZ"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="o7i-gt-pfn" id="kn6-x8-9jN"/>
+                        <outlet property="descriptionLabel" destination="tnp-7q-QAM" id="A1T-8r-7Om"/>
+                        <outlet property="forksLabel" destination="PXu-Py-4Mh" id="STh-vE-Vum"/>
+                        <outlet property="languageLabel" destination="oD5-Tz-mBB" id="ENB-fJ-MNv"/>
+                        <outlet property="starsLabel" destination="E7I-d3-L53" id="Fhs-Ka-v8q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Mk-jF-MsP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

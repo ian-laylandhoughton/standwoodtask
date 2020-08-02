@@ -50,8 +50,8 @@ class RepositoriesViewController: UIViewController {
             guard let detailVC = segue.destination as? RepositoryDetailViewController, let repo = self.selectedRepo else {
                 return
             }
-            
-            detailVC.configure(repo: repo)
+            let viewModel = RepositoryDetailViewModelImpl(repo: repo)
+            detailVC.configure(viewModel: viewModel)
             self.navigationItem.backBarButtonItem = UIBarButtonItem(title: NSLocalizedString("back", comment: "Back"), style: .plain, target: nil, action: nil)
         }
     }
