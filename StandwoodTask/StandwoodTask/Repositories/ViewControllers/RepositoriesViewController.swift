@@ -153,10 +153,12 @@ extension RepositoriesViewController: RepositoriesViewModelDelegate {
     func getReposDidFail(error: String) {
         let alertController = UIAlertController(title: NSLocalizedString("generic_error_title", comment: "Error title"), message: error, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: NSLocalizedString("retry", comment: "Retry"), style: .default, handler: { _ in
-            self.viewModel.segmentedControlDidChange()
+            self.segmentedControlDidChange(sender: self.segmentedControl)
         }))
         
-        alertController.addAction(UIAlertAction(title: NSLocalizedString("cancel", comment: "Cancel"), style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("cancel", comment: "Cancel"), style: .cancel, handler: { _ in
+            self.activityIndicator.stopAnimating()
+        }))
         self.present(alertController, animated: true, completion: nil)
     }
 }
