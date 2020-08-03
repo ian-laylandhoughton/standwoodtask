@@ -17,6 +17,7 @@ enum RepoViewType: Int {
 protocol RepositoriesViewModelDelegate {
     func getReposOnComplete()
     func getReposDidFail(error: String)
+    func collectionViewSize() -> CGSize
 }
 
 protocol ReposViewModel {
@@ -38,22 +39,33 @@ extension ReposViewModel {
 
 class RepositoriesViewModelImpl: ReposViewModel {
     let cellHeight: CGFloat = 90
-    let cellPadding: CGFloat = 20
+    let cellPadding: CGFloat = 10
+    
+    private var iPhoneCellSize: CGSize {
+        return CGSize(width: self.delegate?.collectionViewSize().width ?? 0 - (self.cellPadding * 2), height: self.cellHeight)
+    }
+    
+    private var iPadCellSize: CGSize {
+        guard let unwrapepdCollectionViewSize = self.delegate?.collectionViewSize() else {
+            return .zero
+        }
+        return CGSize(width: unwrapepdCollectionViewSize.width / 3 - self.cellPadding, height: unwrapepdCollectionViewSize.height / 2 - self.cellPadding)
+    }
     
     var screenTitle: String {
         return NSLocalizedString("repositories_title", comment: "Repositories title")
     }
     
     var cellSize: CGSize {
-        return CGSize(width: UIScreen.main.bounds.width - self.cellPadding, height: self.cellHeight)
+        return UIDevice.current.userInterfaceIdiom == .pad ? self.iPadCellSize : self.iPadCellSize
     }
     
     var hasMoreRepos: Bool {
         return self.dataSource.count != self.totalNumberOfRepos
     }
     
-    var dataSource: [GitHubRepo] = []
     var delegate: RepositoriesViewModelDelegate?
+    var dataSource: [GitHubRepo] = []
     
     private var currentRepoViewType: RepoViewType = .day
     private var pageNumber: Int = 1

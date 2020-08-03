@@ -17,8 +17,6 @@ class RepositoriesViewController: UIViewController, RepoCollectionViewCellDelega
     private let loadingCellIdentifier = "loadingCell"
     private let loadingCllNibName = "LoadingCollectionViewCell"
     
-    var refresher: UIRefreshControl!
-    
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             let repoCellNib = UINib(nibName: self.repoCellNibName, bundle: nil)
@@ -27,11 +25,14 @@ class RepositoriesViewController: UIViewController, RepoCollectionViewCellDelega
             let loadingCellNib = UINib(nibName: self.loadingCllNibName, bundle: nil)
             self.collectionView.register(loadingCellNib, forCellWithReuseIdentifier: self.loadingCellIdentifier)
             
-            self.refresher = UIRefreshControl()
+            if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+                layout.scrollDirection = UIDevice.current.userInterfaceIdiom == .pad ? .horizontal : .vertical
+            }
+            
+            let refresher = UIRefreshControl()
             self.collectionView!.alwaysBounceVertical = true
-            self.refresher.tintColor = UIColor.red
-            self.refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
-            self.collectionView.refreshControl = self.refresher
+            refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
+            self.collectionView.refreshControl = refresher
         }
     }
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -134,6 +135,10 @@ extension RepositoriesViewController: UICollectionViewDataSource, UICollectionVi
 }
 
 extension RepositoriesViewController: RepositoriesViewModelDelegate {
+    
+    func collectionViewSize() -> CGSize {
+        return self.collectionView.bounds.size
+    }
     
     func getReposOnComplete() {
         self.stopRefresher()

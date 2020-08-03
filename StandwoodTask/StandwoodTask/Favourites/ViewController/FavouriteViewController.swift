@@ -12,6 +12,7 @@ class FavouriteViewController: RepositoriesViewController {
     
     override func viewDidLoad() {
         self.viewModel = FavouritesViewModelImpl()
+        self.viewModel.delegate = self
         self.collectionView.refreshControl = nil
     }
     

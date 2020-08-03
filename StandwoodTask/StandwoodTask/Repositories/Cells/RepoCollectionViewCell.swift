@@ -19,8 +19,17 @@ protocol RepoCollectionViewCell {
 class RepoCollectionViewCellImpl: UICollectionViewCell, RepoCollectionViewCell {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var favouriteButton: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            self.titleLabel.numberOfLines = UIDevice.current.userInterfaceIdiom == .pad ? 0 : 1
+        }
+    }
+    @IBOutlet weak var descriptionLabel: UILabel! {
+        didSet {
+            self.descriptionLabel.numberOfLines = UIDevice.current.userInterfaceIdiom == .pad ? 0 : 2
+        }
+    }
+    
     
     private var delegate: RepoCollectionViewCellDelegate?
     private var repo: GitHubRepo?
