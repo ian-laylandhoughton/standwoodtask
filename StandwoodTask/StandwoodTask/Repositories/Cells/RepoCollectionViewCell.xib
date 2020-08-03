@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,14 +10,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RepoCollectionViewCellImpl" customModule="StandwoodTask" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DNQ-4T-RKl">
-                        <rect key="frame" x="10" y="20" width="100" height="100"/>
+                        <rect key="frame" x="10" y="20" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="95b-pP-3s8">
                                 <variation key="heightClass=regular-widthClass=compact" constant="50"/>
@@ -35,13 +35,13 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ib-GM-VjQ">
-                        <rect key="frame" x="130" y="98" width="264" height="22"/>
+                        <rect key="frame" x="70" y="20" width="249" height="21.666666666666671"/>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ajB-SW-fnq">
-                        <rect key="frame" x="434" y="57" width="30" height="26.5"/>
+                        <rect key="frame" x="379" y="32" width="30" height="26.333333333333329"/>
                         <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.2274509804" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Ax4-S1-Jbr"/>
@@ -49,7 +49,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8in-Rz-dPY">
-                        <rect key="frame" x="10" y="294" width="60" height="60"/>
+                        <rect key="frame" x="339" y="30" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="7yG-0d-5RE">
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
@@ -68,14 +68,14 @@
                         </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="071-e4-uY1">
-                        <rect key="frame" x="10" y="363" width="399" height="1"/>
+                        <rect key="frame" x="10" y="89" width="399" height="1"/>
                         <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="zgD-CR-V57"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toF-bC-oRA">
-                        <rect key="frame" x="10" y="130" width="384" height="18"/>
+                        <rect key="frame" x="70" y="46.666666666666664" width="249" height="17.999999999999993"/>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -114,17 +114,25 @@
                 <constraint firstItem="ajB-SW-fnq" firstAttribute="centerY" secondItem="DNQ-4T-RKl" secondAttribute="centerY" id="zO3-hA-Ufz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="414" height="364"/>
+            <size key="customSize" width="414" height="90"/>
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="1oM-Lb-8oI"/>
                     <exclude reference="VhZ-Dm-mwN"/>
                     <exclude reference="uFz-4l-My6"/>
+                    <exclude reference="4RU-9B-wVi"/>
+                    <exclude reference="IR9-mY-rbA"/>
                     <exclude reference="N8g-DL-U2e"/>
                     <exclude reference="Tn1-95-bo7"/>
+                    <exclude reference="eTt-Kt-HVm"/>
                     <exclude reference="ite-KF-RUV"/>
+                    <exclude reference="2eM-Oq-rw6"/>
                     <exclude reference="45H-Sp-0fA"/>
+                    <exclude reference="4az-a6-Qbb"/>
                     <exclude reference="Fb6-mn-2aN"/>
+                    <exclude reference="jxO-6f-QQV"/>
+                    <exclude reference="yz1-v1-vl8"/>
+                    <exclude reference="1OC-Rh-qYy"/>
                     <exclude reference="UQ2-2Y-K4T"/>
                     <exclude reference="VDi-Ry-IdF"/>
                     <exclude reference="vwR-9h-pDZ"/>
@@ -154,11 +162,19 @@
                     <include reference="1oM-Lb-8oI"/>
                     <include reference="VhZ-Dm-mwN"/>
                     <exclude reference="uFz-4l-My6"/>
+                    <include reference="4RU-9B-wVi"/>
+                    <include reference="IR9-mY-rbA"/>
                     <exclude reference="N8g-DL-U2e"/>
                     <exclude reference="Tn1-95-bo7"/>
+                    <include reference="eTt-Kt-HVm"/>
                     <exclude reference="ite-KF-RUV"/>
+                    <include reference="2eM-Oq-rw6"/>
                     <exclude reference="45H-Sp-0fA"/>
+                    <include reference="4az-a6-Qbb"/>
                     <exclude reference="Fb6-mn-2aN"/>
+                    <include reference="jxO-6f-QQV"/>
+                    <include reference="yz1-v1-vl8"/>
+                    <include reference="1OC-Rh-qYy"/>
                     <exclude reference="UQ2-2Y-K4T"/>
                     <exclude reference="VDi-Ry-IdF"/>
                     <include reference="vwR-9h-pDZ"/>
@@ -172,7 +188,7 @@
                 <outlet property="favouriteButton" destination="8in-Rz-dPY" id="fXD-gZ-xWF"/>
                 <outlet property="titleLabel" destination="5Ib-GM-VjQ" id="jbM-7l-JKd"/>
             </connections>
-            <point key="canvasLocation" x="404.31654676258995" y="240.64748201438849"/>
+            <point key="canvasLocation" x="403.19999999999999" y="138.91625615763547"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -57,7 +57,7 @@ class RepositoriesViewModelImpl: ReposViewModel {
     }
     
     var cellSize: CGSize {
-        return UIDevice.current.userInterfaceIdiom == .pad ? self.iPadCellSize : self.iPadCellSize
+        return UIDevice.current.userInterfaceIdiom == .pad ? self.iPadCellSize : self.iPhoneCellSize
     }
     
     var hasMoreRepos: Bool {
