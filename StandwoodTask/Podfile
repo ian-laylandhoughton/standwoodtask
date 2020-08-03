@@ -3,4 +3,8 @@
 
 target 'StandwoodTask' do
   pod 'StanwoodCore'
+	
+  target 'StandwoodTaskTests' do
+    inherit! :search_paths
+  end
 end

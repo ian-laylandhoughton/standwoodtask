@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09B81E3B6C169A727E86C6908C943296 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A476B6FA8DB53D6D21D04E2A3596660 /* String+Extension.swift */; };
-		0B072CC80EC24EA6BCC4A3008BCB5202 /* Pods-StandwoodTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1207673F3CCCB90433432F123E594C /* Pods-StandwoodTask-dummy.m */; };
+		0B072CC80EC24EA6BCC4A3008BCB5202 /* Pods-StandwoodTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E7BF7494B759B48C7BB4F1A8E038E /* Pods-StandwoodTask-dummy.m */; };
 		214A8B0206D994A97A735C55B5C3759C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F45EDB5101782C1AD29522AF7D1775 /* UIViewController+Extension.swift */; };
 		21E6D6A4551617F894F677E145950B91 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DAA316AB6AB219BF43DEE9AA504A9 /* UICollectionViewCell+Extension.swift */; };
 		22118B77D8D19A699110A952B3577339 /* NotificationCenter+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E657A37CF1CADC2B177D4FBBA6301B /* NotificationCenter+Observer.swift */; };
@@ -36,16 +36,24 @@
 		C082704C69D87942CC9D00D55396D62D /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECBCA6DF722521CE52FB3D553040B8 /* FeedbackGenerator.swift */; };
 		C150A20FF06310B27CA56CDA0A2B10CD /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B24CC96FB1AC7134EAE39BF8B8ABD7 /* Wireframe.swift */; };
 		C6DA3A0FFB513DD10443407E5E2AB7B6 /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC0291AA692840F58ABF31535F4950 /* TimeInterval+Extension.swift */; };
-		CB9139F48B330908152EEC658A05952D /* Pods-StandwoodTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 282898C65F70C540F80AB1080C1C0C17 /* Pods-StandwoodTask-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB9139F48B330908152EEC658A05952D /* Pods-StandwoodTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2871284B6E5D39F9DE0595F0114B9F /* Pods-StandwoodTask-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D4428FEFE64800129DB862F88CF976AC /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C18198923D2A214EB46DB2CD84F4E0 /* UIStoryboard+Extension.swift */; };
 		E8B00CDEA52B0EDBF37B99FF24D931C1 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503719AA527F4EB8974181CA3210AA1 /* UIApplication+Extension.swift */; };
 		E91247FAE364F05D3A8F22F0346B9B3D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719ED7D4EE358514BE35B60D5E508D6C /* UIView+Extension.swift */; };
 		E93C2A5D5E2777077C300A3252953CD3 /* Disposable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ACFF6E98B06F802206020E8A853C52 /* Disposable+UIView.swift */; };
 		ED2371F8002E301F5226277A5B3CBF06 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2533FCB6EFE0F78B1BAA6BBAD10C7 /* Loadable.swift */; };
 		F6699DF6924B9A23C7BDAD67468CF160 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCFF887CA938E4D36D908A23B4D5A3A /* UISearchBar+Extension.swift */; };
+		F6FDB5284941BABB704E9BA1C54412DD /* Pods-StandwoodTaskTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8F8679B03D9D00D537DD61E40D252 /* Pods-StandwoodTaskTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C2C2F87446CFCF81133111A8F3DA0BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A29CB651DEA7E7574A294E459937FF96;
+			remoteInfo = "Pods-StandwoodTask";
+		};
 		C54093A727CE5870957E739543CCE55C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -56,18 +64,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045C22C9B38B65C1D805EB2992F57DD2 /* Pods-StandwoodTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C536B2A362B438B34D19E36583FA5B2 /* Pods-StandwoodTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StandwoodTask-acknowledgements.plist"; sourceTree = "<group>"; };
 		0DD1DC2A6CDF0251B908DB4262083CAC /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "StanwoodCore/Extensions/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0E354435C9A0A613855B25C28822A11D /* StanwoodCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StanwoodCore.release.xcconfig; sourceTree = "<group>"; };
-		0E593A6181C9695AF97BF22BF04A689D /* Pods-StandwoodTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StandwoodTask.modulemap"; sourceTree = "<group>"; };
 		1589727CEEF5D7745E1D8104E539F82D /* AppSettingsExplorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppSettingsExplorer.swift; path = StanwoodCore/Core/AppSettingsExplorer.swift; sourceTree = "<group>"; };
 		15ACFF6E98B06F802206020E8A853C52 /* Disposable+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disposable+UIView.swift"; path = "StanwoodCore/Protocols/Disposable+UIView.swift"; sourceTree = "<group>"; };
+		17088EDFE9C1E00D601B47ABCE3B8031 /* libPods-StandwoodTaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-StandwoodTaskTests.a"; path = "libPods-StandwoodTaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17AC0291AA692840F58ABF31535F4950 /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extension.swift"; path = "StanwoodCore/Extensions/TimeInterval+Extension.swift"; sourceTree = "<group>"; };
-		282898C65F70C540F80AB1080C1C0C17 /* Pods-StandwoodTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StandwoodTask-umbrella.h"; sourceTree = "<group>"; };
+		23482600A55EAC1AC9539E8A00983147 /* Pods-StandwoodTaskTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StandwoodTaskTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		245EF886A56906609FABFB42F7CBD2FE /* Pods-StandwoodTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StandwoodTask.modulemap"; sourceTree = "<group>"; };
 		2D6D110CBD5386099D8D4F80E98A2E88 /* BasePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasePresenter.swift; path = StanwoodCore/Core/BasePresenter.swift; sourceTree = "<group>"; };
+		356E7BF7494B759B48C7BB4F1A8E038E /* Pods-StandwoodTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StandwoodTask-dummy.m"; sourceTree = "<group>"; };
 		35B24CC96FB1AC7134EAE39BF8B8ABD7 /* Wireframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wireframe.swift; path = StanwoodCore/Protocols/Wireframe.swift; sourceTree = "<group>"; };
 		391A88BCEE35320994D509081667CBD4 /* UIButton+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "StanwoodCore/Extensions/UIButton+Extension.swift"; sourceTree = "<group>"; };
 		3CCFF887CA938E4D36D908A23B4D5A3A /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Extension.swift"; path = "StanwoodCore/Extensions/UISearchBar+Extension.swift"; sourceTree = "<group>"; };
-		449AFAC7C005437BAC9D6155DF424412 /* Pods-StandwoodTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StandwoodTask-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E2871284B6E5D39F9DE0595F0114B9F /* Pods-StandwoodTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StandwoodTask-umbrella.h"; sourceTree = "<group>"; };
 		4FA83D1D97B8A0617E7BE01D30D2472F /* Fading+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Fading+UIView.swift"; path = "StanwoodCore/Extensions/Fading+UIView.swift"; sourceTree = "<group>"; };
 		5A476B6FA8DB53D6D21D04E2A3596660 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "StanwoodCore/Extensions/String+Extension.swift"; sourceTree = "<group>"; };
 		6315D5F7538F0F042ACD8C5CBD539038 /* libPods-StandwoodTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-StandwoodTask.a"; path = "libPods-StandwoodTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,33 +93,42 @@
 		76E2533FCB6EFE0F78B1BAA6BBAD10C7 /* Loadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loadable.swift; path = StanwoodCore/Protocols/Loadable.swift; sourceTree = "<group>"; };
 		80F9E44F99635B6FF537CE2DCDB4FDE9 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = StanwoodCore/Core/Storage.swift; sourceTree = "<group>"; };
 		83ECBCA6DF722521CE52FB3D553040B8 /* FeedbackGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedbackGenerator.swift; path = StanwoodCore/Core/FeedbackGenerator.swift; sourceTree = "<group>"; };
+		85ABBEDE4D91D394305E8E3E2E2F0D79 /* Pods-StandwoodTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTask.debug.xcconfig"; sourceTree = "<group>"; };
 		94A43B67E36ADCD7F2BAD7FFBCCE6E9B /* StanwoodCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StanwoodCore.debug.xcconfig; sourceTree = "<group>"; };
-		9B1207673F3CCCB90433432F123E594C /* Pods-StandwoodTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StandwoodTask-dummy.m"; sourceTree = "<group>"; };
 		9D4482BAA1A4B2851281BA899D7F49D6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Extension.swift"; path = "StanwoodCore/Extensions/UITextField+Extension.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DD0563F11F982C914379DB82E73F4F1 /* Pods-StandwoodTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTask.debug.xcconfig"; sourceTree = "<group>"; };
 		A12124803981CE0DE9806EF580817398 /* Stanwood.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stanwood.swift; path = StanwoodCore/Core/Stanwood.swift; sourceTree = "<group>"; };
 		A29D90842827DB00F66B84CFB6FDB9CA /* CGFloat+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extension.swift"; path = "StanwoodCore/Extensions/CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		A6E8BE293A2D0F1BB0D8052A3F4A4963 /* StanwoodCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StanwoodCore.modulemap; sourceTree = "<group>"; };
+		A6F67FC329D03B7A0ED9AE07E6C15A70 /* Pods-StandwoodTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTask.release.xcconfig"; sourceTree = "<group>"; };
+		B2DE22D39DFB3DB832B73B893C0BC4E9 /* Pods-StandwoodTaskTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StandwoodTaskTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B722D1DB46663049A7AFC510BE314918 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "StanwoodCore/Extensions/UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		B8C9E00EC1218D1B4C235E42ACD47235 /* StanwoodCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StanwoodCore-prefix.pch"; sourceTree = "<group>"; };
 		C3C18198923D2A214EB46DB2CD84F4E0 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+Extension.swift"; path = "StanwoodCore/Extensions/UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		CE3F03A51CC00847CE63AD9015E787CF /* CodingBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodingBridge.swift; path = StanwoodCore/Core/CodingBridge.swift; sourceTree = "<group>"; };
+		D0EE8B07247D7294EF116F549530D868 /* Pods-StandwoodTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		D1F2AF0FD5F8B40427D14C8F49AA132B /* libStanwoodCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libStanwoodCore.a; path = libStanwoodCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B046AA6018090FD74CD2803CBAACF6 /* Presentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentable.swift; path = StanwoodCore/Protocols/Presentable.swift; sourceTree = "<group>"; };
 		D61F720E02385471CDA80950D5CF50E0 /* Autosizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Autosizable.swift; path = StanwoodCore/Protocols/Autosizable.swift; sourceTree = "<group>"; };
 		D745876BE6420E706CC583F17C164F9F /* UITestingCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITestingCore.swift; path = StanwoodCore/Core/UITestingCore.swift; sourceTree = "<group>"; };
+		DC54157499B3088233AFA0E0B9B02C76 /* Pods-StandwoodTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StandwoodTask-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E067CDE6E7FE2BB20B7BEA86EA13AE6F /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Extension.swift"; path = "StanwoodCore/Extensions/UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		E0E657A37CF1CADC2B177D4FBBA6301B /* NotificationCenter+Observer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+Observer.swift"; path = "StanwoodCore/Core/NotificationCenter+Observer.swift"; sourceTree = "<group>"; };
 		E485C5E3E2EDB5914D863B272B9B24F6 /* HasPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasPresenter.swift; path = StanwoodCore/Protocols/HasPresenter.swift; sourceTree = "<group>"; };
 		E503719AA527F4EB8974181CA3210AA1 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Extension.swift"; path = "StanwoodCore/Extensions/UIApplication+Extension.swift"; sourceTree = "<group>"; };
-		ED4485D01503DD2E1541E0CADECE4ACC /* Pods-StandwoodTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StandwoodTask.release.xcconfig"; sourceTree = "<group>"; };
-		F9844D496C54E9469ED3759C2E5C70BC /* Pods-StandwoodTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StandwoodTask-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FA05F8EA5B0E91DE023CFD87FCD0BA79 /* StanwoodCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StanwoodCore-umbrella.h"; sourceTree = "<group>"; };
+		FBC8F8679B03D9D00D537DD61E40D252 /* Pods-StandwoodTaskTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StandwoodTaskTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1851A80948C668B5D40EDEBB758B437F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AB99139B5EE3A7D76A554C25A4844D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,33 +145,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0196852B5C2894226B8BAB57995009CD /* Pods-StandwoodTask */ = {
+		067044AB45447D058F70C55EF5107C27 /* Pods-StandwoodTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E593A6181C9695AF97BF22BF04A689D /* Pods-StandwoodTask.modulemap */,
-				F9844D496C54E9469ED3759C2E5C70BC /* Pods-StandwoodTask-acknowledgements.markdown */,
-				449AFAC7C005437BAC9D6155DF424412 /* Pods-StandwoodTask-acknowledgements.plist */,
-				9B1207673F3CCCB90433432F123E594C /* Pods-StandwoodTask-dummy.m */,
-				282898C65F70C540F80AB1080C1C0C17 /* Pods-StandwoodTask-umbrella.h */,
-				9DD0563F11F982C914379DB82E73F4F1 /* Pods-StandwoodTask.debug.xcconfig */,
-				ED4485D01503DD2E1541E0CADECE4ACC /* Pods-StandwoodTask.release.xcconfig */,
+				B2DE22D39DFB3DB832B73B893C0BC4E9 /* Pods-StandwoodTaskTests-acknowledgements.markdown */,
+				23482600A55EAC1AC9539E8A00983147 /* Pods-StandwoodTaskTests-acknowledgements.plist */,
+				FBC8F8679B03D9D00D537DD61E40D252 /* Pods-StandwoodTaskTests-dummy.m */,
+				045C22C9B38B65C1D805EB2992F57DD2 /* Pods-StandwoodTaskTests.debug.xcconfig */,
+				D0EE8B07247D7294EF116F549530D868 /* Pods-StandwoodTaskTests.release.xcconfig */,
 			);
-			name = "Pods-StandwoodTask";
-			path = "Target Support Files/Pods-StandwoodTask";
+			name = "Pods-StandwoodTaskTests";
+			path = "Target Support Files/Pods-StandwoodTaskTests";
 			sourceTree = "<group>";
 		};
-		0A3E0F25789C018379EAE341EC90ABA7 /* Targets Support Files */ = {
+		0772A3BED32A36FE1AC74B0EE2F62C92 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0196852B5C2894226B8BAB57995009CD /* Pods-StandwoodTask */,
+				CA70DE578AD2B12E50E962615096CD7D /* Pods-StandwoodTask */,
+				067044AB45447D058F70C55EF5107C27 /* Pods-StandwoodTaskTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1C726EF9EC307FE21D69C5518ACB0AE8 /* Products */ = {
+		14DB10AE63ADECE42A13163A7E24E2C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				6315D5F7538F0F042ACD8C5CBD539038 /* libPods-StandwoodTask.a */,
+				17088EDFE9C1E00D601B47ABCE3B8031 /* libPods-StandwoodTaskTests.a */,
 				D1F2AF0FD5F8B40427D14C8F49AA132B /* libStanwoodCore.a */,
 			);
 			name = Products;
@@ -178,14 +199,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CA70DE578AD2B12E50E962615096CD7D /* Pods-StandwoodTask */ = {
+			isa = PBXGroup;
+			children = (
+				245EF886A56906609FABFB42F7CBD2FE /* Pods-StandwoodTask.modulemap */,
+				DC54157499B3088233AFA0E0B9B02C76 /* Pods-StandwoodTask-acknowledgements.markdown */,
+				0C536B2A362B438B34D19E36583FA5B2 /* Pods-StandwoodTask-acknowledgements.plist */,
+				356E7BF7494B759B48C7BB4F1A8E038E /* Pods-StandwoodTask-dummy.m */,
+				3E2871284B6E5D39F9DE0595F0114B9F /* Pods-StandwoodTask-umbrella.h */,
+				85ABBEDE4D91D394305E8E3E2E2F0D79 /* Pods-StandwoodTask.debug.xcconfig */,
+				A6F67FC329D03B7A0ED9AE07E6C15A70 /* Pods-StandwoodTask.release.xcconfig */,
+			);
+			name = "Pods-StandwoodTask";
+			path = "Target Support Files/Pods-StandwoodTask";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				9FBA0BC57FF60A4DCD35DD9F43A9DEB0 /* Pods */,
-				1C726EF9EC307FE21D69C5518ACB0AE8 /* Products */,
-				0A3E0F25789C018379EAE341EC90ABA7 /* Targets Support Files */,
+				14DB10AE63ADECE42A13163A7E24E2C8 /* Products */,
+				0772A3BED32A36FE1AC74B0EE2F62C92 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,6 +276,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		170CEDCEAEA614060489146EB84904BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		438679A9E4A49910E2231C4A2C0F69C1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +338,24 @@
 			productReference = 6315D5F7538F0F042ACD8C5CBD539038 /* libPods-StandwoodTask.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C73BAC088B81D58CB975B2B529E405D6 /* Pods-StandwoodTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50EEDD934BE021EADB567BA55F361958 /* Build configuration list for PBXNativeTarget "Pods-StandwoodTaskTests" */;
+			buildPhases = (
+				170CEDCEAEA614060489146EB84904BA /* Headers */,
+				856BDD2BB09A38B80A6A8C08DFAFFF48 /* Sources */,
+				77AB99139B5EE3A7D76A554C25A4844D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56B92B6634908BF7BEEE89019DDE8CCC /* PBXTargetDependency */,
+			);
+			name = "Pods-StandwoodTaskTests";
+			productName = "Pods-StandwoodTaskTests";
+			productReference = 17088EDFE9C1E00D601B47ABCE3B8031 /* libPods-StandwoodTaskTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,11 +374,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1C726EF9EC307FE21D69C5518ACB0AE8 /* Products */;
+			productRefGroup = 14DB10AE63ADECE42A13163A7E24E2C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A29CB651DEA7E7574A294E459937FF96 /* Pods-StandwoodTask */,
+				C73BAC088B81D58CB975B2B529E405D6 /* Pods-StandwoodTaskTests */,
 				1E864E7C2E6137975B52C9FDEDE866E7 /* StanwoodCore */,
 			);
 		};
@@ -351,6 +413,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		856BDD2BB09A38B80A6A8C08DFAFFF48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FDB5284941BABB704E9BA1C54412DD /* Pods-StandwoodTaskTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA56D4FE69C01E29969760A4B1CED751 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,12 +478,18 @@
 			target = 1E864E7C2E6137975B52C9FDEDE866E7 /* StanwoodCore */;
 			targetProxy = C54093A727CE5870957E739543CCE55C /* PBXContainerItemProxy */;
 		};
+		56B92B6634908BF7BEEE89019DDE8CCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-StandwoodTask";
+			target = A29CB651DEA7E7574A294E459937FF96 /* Pods-StandwoodTask */;
+			targetProxy = C2C2F87446CFCF81133111A8F3DA0BBA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03113C4564C67A6416709AEEBD0780C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DD0563F11F982C914379DB82E73F4F1 /* Pods-StandwoodTask.debug.xcconfig */;
+			baseConfigurationReference = 85ABBEDE4D91D394305E8E3E2E2F0D79 /* Pods-StandwoodTask.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -520,6 +596,29 @@
 			};
 			name = Release;
 		};
+		4D6229958CA674B76424CF47BB66220C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0EE8B07247D7294EF116F549530D868 /* Pods-StandwoodTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		6601DF311587C61AC8899FAF6429D463 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E354435C9A0A613855B25C28822A11D /* StanwoodCore.release.xcconfig */;
@@ -549,7 +648,7 @@
 		};
 		B0782E6D1AE6CC5C2010CEC2D9EC2115 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED4485D01503DD2E1541E0CADECE4ACC /* Pods-StandwoodTask.release.xcconfig */;
+			baseConfigurationReference = A6F67FC329D03B7A0ED9AE07E6C15A70 /* Pods-StandwoodTask.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -570,6 +669,28 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		CD0F8A988F04B9C32E1999AB21113CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045C22C9B38B65C1D805EB2992F57DD2 /* Pods-StandwoodTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -652,6 +773,15 @@
 			buildConfigurations = (
 				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
 				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50EEDD934BE021EADB567BA55F361958 /* Build configuration list for PBXNativeTarget "Pods-StandwoodTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0F8A988F04B9C32E1999AB21113CCF /* Debug */,
+				4D6229958CA674B76424CF47BB66220C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
