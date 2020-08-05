@@ -18,8 +18,7 @@ struct FavouritesManager {
         var savedRepos = self.getFavouriteRepos()
         savedRepos.append(repo)
         
-        let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(savedRepos) {
+        if let encoded = try? JSONEncoder().encode(savedRepos) {
             UserDefaults.standard.set(encoded, forKey: Constants.favouritesKey)
         }
     }
@@ -33,9 +32,7 @@ struct FavouritesManager {
             }
         }
         
-        let encoder = JSONEncoder()
-        
-        if let encoded = try? encoder.encode(savedRepos) {
+        if let encoded = try? JSONEncoder().encode(savedRepos) {
             UserDefaults.standard.set(encoded, forKey: Constants.favouritesKey)
         }
     }

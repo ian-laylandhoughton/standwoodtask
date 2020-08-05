@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StanwoodCore
 
 protocol RepoCollectionViewCellDelegate {
     func didToggleFavouriteOnRepo(repo: GitHubRepo)
@@ -21,12 +22,12 @@ class RepoCollectionViewCellImpl: UICollectionViewCell, RepoCollectionViewCell {
     @IBOutlet weak var favouriteButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
-            self.titleLabel.numberOfLines = UIDevice.current.userInterfaceIdiom == .pad ? 0 : 1
+            self.titleLabel.numberOfLines = DeviceType.isiPad ? 0 : 1
         }
     }
     @IBOutlet weak var descriptionLabel: UILabel! {
         didSet {
-            self.descriptionLabel.numberOfLines = UIDevice.current.userInterfaceIdiom == .pad ? 0 : 2
+            self.descriptionLabel.numberOfLines = DeviceType.isiPad ? 0 : 2
         }
     }
     

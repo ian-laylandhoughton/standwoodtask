@@ -28,7 +28,7 @@ class FavouritesViewModelImpl: ReposViewModel {
     }
     
     var cellSize: CGSize {
-        return UIDevice.current.userInterfaceIdiom == .pad ? self.iPadCellSize : self.iPhoneCellSize
+        return DeviceType.isiPad ? self.iPadCellSize : self.iPhoneCellSize
     }
     
     var dataSource: [GitHubRepo] {

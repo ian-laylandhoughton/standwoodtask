@@ -26,7 +26,7 @@ class RepositoriesViewController: UIViewController, RepoCollectionViewCellDelega
             self.collectionView.register(loadingCellNib, forCellWithReuseIdentifier: self.loadingCellIdentifier)
             
             if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-                layout.scrollDirection = UIDevice.current.userInterfaceIdiom == .pad ? .horizontal : .vertical
+                layout.scrollDirection = DeviceType.isiPad ? .horizontal : .vertical
             }
             
             let refresher = UIRefreshControl()

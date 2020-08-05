@@ -6,7 +6,7 @@
 //  Copyright © 2020 Ian Layland-Houghton. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Constants {
     static let gitHubUrl = "https://api.github.com/search/repositories?q=created+%@&sort=stars&order=desc&page=%d"
@@ -14,4 +14,8 @@ struct Constants {
     static let standardDateFormat = "yyyy-MM-dd"
     static let formattedDateFormat = "dd/MM/yyyy"
     static let fullDateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+}
+
+struct DeviceType {
+    static let isiPad = UIDevice.current.userInterfaceIdiom == .pad
 }
